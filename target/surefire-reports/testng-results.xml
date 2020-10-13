@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="19" passed="17" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-13T18:04:07 EDT" name="Suite" finished-at="2020-10-13T18:04:51 EDT" duration-ms="43844">
+    <groups>
+    </groups>
+    <test started-at="2020-10-13T18:04:07 EDT" name="Home Page Test" finished-at="2020-10-13T18:04:20 EDT" duration-ms="12736">
+      <class name="test.AppiumFramework.HomeTest">
+        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T18:04:07 EDT" name="initMethod" finished-at="2020-10-13T18:04:07 EDT" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method signature="pageTitle(java.lang.String)[pri:1, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T18:04:07 EDT" name="pageTitle" finished-at="2020-10-13T18:04:11 EDT" duration-ms="3575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[General Store]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageTitle -->
+        <test-method signature="dropdownLabel()[pri:2, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T18:04:11 EDT" name="dropdownLabel" finished-at="2020-10-13T18:04:11 EDT" duration-ms="233" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at test.AppiumFramework.HomeTest.dropdownLabel(HomeTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdownLabel -->
+        <test-method signature="selectCountry(java.lang.String)[pri:3, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T18:04:12 EDT" name="selectCountry" finished-at="2020-10-13T18:04:14 EDT" duration-ms="2128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Algeria]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCountry -->
+        <test-method signature="nameField(java.lang.String, java.lang.String)[pri:4, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T18:04:14 EDT" name="nameField" finished-at="2020-10-13T18:04:15 EDT" duration-ms="1277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Enter name here]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Joe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameField -->
+        <test-method signature="genderSelect()[pri:5, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T18:04:15 EDT" name="genderSelect" finished-at="2020-10-13T18:04:15 EDT" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- genderSelect -->
+        <test-method signature="toastMsg(java.lang.String)[pri:6, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T18:04:15 EDT" name="toastMsg" finished-at="2020-10-13T18:04:17 EDT" duration-ms="1833" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Please enter your name]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toastMsg -->
+        <test-method signature="login(java.lang.String)[pri:7, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T18:04:17 EDT" name="login" finished-at="2020-10-13T18:04:20 EDT" duration-ms="2652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Let's  Shop]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- test.AppiumFramework.HomeTest -->
+    </test> <!-- Home Page Test -->
+    <test started-at="2020-10-13T18:04:20 EDT" name="Products Page Test" finished-at="2020-10-13T18:04:31 EDT" duration-ms="10272">
+      <class name="test.AppiumFramework.ProductsTest">
+        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T18:04:20 EDT" name="initMethod" finished-at="2020-10-13T18:04:20 EDT" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method signature="productsPage(java.lang.String)[pri:1, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T18:04:20 EDT" name="productsPage" finished-at="2020-10-13T18:04:21 EDT" duration-ms="373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Products]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productsPage -->
+        <test-method signature="toastMsg(java.lang.String)[pri:2, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T18:04:21 EDT" name="toastMsg" finished-at="2020-10-13T18:04:21 EDT" duration-ms="647" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Please add some product at first]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [cheers!] but found [Please add some product at first]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [cheers!] but found [Please add some product at first]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at test.AppiumFramework.ProductsTest.toastMsg(ProductsTest.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toastMsg -->
+        <test-method signature="locateItems(java.lang.String, java.lang.String)[pri:3, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T18:04:22 EDT" name="locateItems" finished-at="2020-10-13T18:04:29 EDT" duration-ms="6499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[android.widget.TextView]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ADDED TO CART]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locateItems -->
+        <test-method signature="gotoCart()[pri:4, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T18:04:29 EDT" name="gotoCart" finished-at="2020-10-13T18:04:31 EDT" duration-ms="2053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoCart -->
+        <test-method is-config="true" signature="convertFromPriceList()[pri:0, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T18:04:31 EDT" name="convertFromPriceList" finished-at="2020-10-13T18:04:31 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertFromPriceList -->
+      </class> <!-- test.AppiumFramework.ProductsTest -->
+    </test> <!-- Products Page Test -->
+    <test started-at="2020-10-13T18:04:31 EDT" name="Cart Page Test" finished-at="2020-10-13T18:04:38 EDT" duration-ms="7290">
+      <class name="test.AppiumFramework.CartTest">
+        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T18:04:31 EDT" name="initMethod" finished-at="2020-10-13T18:04:31 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method signature="cartPage(java.lang.String)[pri:1, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T18:04:31 EDT" name="cartPage" finished-at="2020-10-13T18:04:31 EDT" duration-ms="150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cart]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartPage -->
+        <test-method signature="validateCartItems(java.lang.String)[pri:2, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T18:04:31 EDT" name="validateCartItems" finished-at="2020-10-13T18:04:31 EDT" duration-ms="134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Not Found]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCartItems -->
+        <test-method signature="validateCartTotal()[pri:3, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T18:04:31 EDT" name="validateCartTotal" finished-at="2020-10-13T18:04:31 EDT" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCartTotal -->
+        <test-method signature="validateChkBox(java.lang.String)[pri:4, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T18:04:31 EDT" name="validateChkBox" finished-at="2020-10-13T18:04:32 EDT" duration-ms="595" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Send me e-mails on discounts related to selected products in future]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateChkBox -->
+        <test-method signature="validateTC(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T18:04:32 EDT" name="validateTC" finished-at="2020-10-13T18:04:35 EDT" duration-ms="3773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Please read our terms of conditions]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Terms Of Conditions]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lorem Ipsum is simply dummy text of the printing and typesetting industry.]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ when an unknown printer took a galley of type and scrambled it to make a type specimen book.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[CLOSE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTC -->
+        <test-method signature="validatePurchaseBtn(java.lang.String)[pri:6, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T18:04:35 EDT" name="validatePurchaseBtn" finished-at="2020-10-13T18:04:38 EDT" duration-ms="2594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Visit to the website to complete purchase]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePurchaseBtn -->
+      </class> <!-- test.AppiumFramework.CartTest -->
+    </test> <!-- Cart Page Test -->
+    <test started-at="2020-10-13T18:04:38 EDT" name="Hybrid App Test" finished-at="2020-10-13T18:04:51 EDT" duration-ms="13030">
+      <class name="test.AppiumFramework.HybridTest">
+        <test-method signature="webView()[pri:1, instance:test.AppiumFramework.HybridTest@7d0b7e3c]" started-at="2020-10-13T18:04:38 EDT" name="webView" finished-at="2020-10-13T18:04:48 EDT" duration-ms="9614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webView -->
+        <test-method signature="nativeAppView()[pri:2, instance:test.AppiumFramework.HybridTest@7d0b7e3c]" started-at="2020-10-13T18:04:48 EDT" name="nativeAppView" finished-at="2020-10-13T18:04:51 EDT" duration-ms="3413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nativeAppView -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AppiumFramework.HybridTest@7d0b7e3c]" started-at="2020-10-13T18:04:51 EDT" name="tearDown" finished-at="2020-10-13T18:04:52 EDT" duration-ms="757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.AppiumFramework.HybridTest -->
+      <class name="test.AppiumFramework.HomeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T18:03:51 EDT" name="setUp" finished-at="2020-10-13T18:04:07 EDT" duration-ms="16242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- test.AppiumFramework.HomeTest -->
+    </test> <!-- Hybrid App Test -->
+  </suite> <!-- Suite -->
+</testng-results>

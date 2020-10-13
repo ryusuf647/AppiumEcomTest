@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 61.797 s <<< FAILURE! - in TestSuite
+test.AppiumFramework.HomeTest.dropdownLabel  Time elapsed: 0.832 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [false] but found [true]
+	at test.AppiumFramework.HomeTest.dropdownLabel(HomeTest.java:41)
+
+test.AppiumFramework.ProductsTest.toastMsg[Please add some product at first](1)  Time elapsed: 1.028 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [cheers!] but found [Please add some product at first]
+	at test.AppiumFramework.ProductsTest.toastMsg(ProductsTest.java:56)
+

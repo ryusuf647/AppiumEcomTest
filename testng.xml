@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <listeners>
+	<listener class-name = "resources.Listeners"/>	
+  </listeners>
+
+  <test name="Home Page Test">
+  	<parameter name = "homepagetitle" value = "General Store"/>
+  	<parameter name = "country" value = "Algeria"/>
+  	<parameter name = "defaultvalue" value = "Enter name here"/>
+  	<parameter name = "namevalue" value = "Joe"/>
+  	<parameter name = "shopbtntext" value = "Let's  Shop"/>
+  	<parameter name = "toastmsg" value = "Please enter your name"/>
+  	<classes>
+  		<class name="test.AppiumFramework.HomeTest"/>
+  	</classes>
+  </test>
+     
+  <test name="Products Page Test">
+  	<parameter name = "productspagetitle" value = "Products"/>
+  	<parameter name = "toastmsg" value = "Please add some product at first"/>
+  	<parameter name = "pagelms" value = "android.widget.TextView"/>
+  	<parameter name = "btnadded" value = "ADDED TO CART"/>
+  	<classes>
+  		<class name="test.AppiumFramework.ProductsTest"/>
+  	</classes>
+  </test>
+  
+  <test name="Cart Page Test">
+  	<parameter name = "cartpagetitle" value = "Cart"/>
+  	<parameter name = "price" value = "Not Found"/>
+  	<parameter name = "chkbtxt" value = "Send me e-mails on discounts related to selected products in future"/>
+  	<parameter name = "tctxt" value = "Please read our terms of conditions"/>
+  	<parameter name = "tctitle" value = "Terms Of Conditions"/>
+  	<parameter name = "tcbody1" value = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."/>
+  	<parameter name = "tcbody2" value = " Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"/>
+  	<parameter name = "tcbody3" value = " when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+	<parameter name = "tcClose" value = "CLOSE"/>
+	<parameter name = "purchasetxt" value = "Visit to the website to complete purchase"/>	
+  	<classes>
+  		<class name="test.AppiumFramework.CartTest"/>
+  	</classes>
+  </test>
+  
+  <test name="Hybrid App Test">
+  	<classes>
+  		<class name="test.AppiumFramework.HybridTest"/>
+  	</classes>
+  </test>
+</suite>

@@ -59,9 +59,10 @@ public class AppTest {
 	}
 	
 	public AppiumDriverLocalService startServer() throws InterruptedException	{
-		AppiumServiceBuilder serviceBuilder = new AppiumServiceBuilder();
-		serviceBuilder.withArgument(ArgTest.CHROME_DRIVER, prop.getProperty("chrome_driver"));
-		service = AppiumDriverLocalService.buildService(serviceBuilder);
+		//AppiumServiceBuilder serviceBuilder = new AppiumServiceBuilder();
+		//serviceBuilder.withArgument(ArgTest.CHROME_DRIVER, prop.getProperty("chrome_driver"));
+		//service = AppiumDriverLocalService.buildService(serviceBuilder);
+		service = AppiumDriverLocalService.buildDefaultService();
 		if (!checkIfServerIsRunning(4723))	{
 			service.start();
 		}

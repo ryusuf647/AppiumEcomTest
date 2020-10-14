@@ -60,8 +60,8 @@ public class AppTest {
 	
 	public AppiumDriverLocalService startServer() throws InterruptedException	{
 		AppiumServiceBuilder serviceBuilder = new AppiumServiceBuilder();
-		serviceBuilder.usingDriverExecutable(new File("C:\\Program Files\\nodejs\\node.exe"));
-		serviceBuilder.withAppiumJS(new File("C:\\Users\\Basement\\AppData\\Roaming\\npm\\node_modules\\appium\\lib\\main.js"));
+		//serviceBuilder.usingDriverExecutable(new File("C:\\Program Files\\nodejs\\node.exe"));
+		//serviceBuilder.withAppiumJS(new File("C:\\Users\\Basement\\AppData\\Roaming\\npm\\node_modules\\appium\\lib\\main.js"));
 		serviceBuilder.withArgument(ArgTest.CHROME_DRIVER, prop.getProperty("chrome_driver"));
 		service = AppiumDriverLocalService.buildService(serviceBuilder);
 		if (!checkIfServerIsRunning(4723))	{

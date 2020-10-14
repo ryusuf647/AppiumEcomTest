@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/6</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 13 21:53:33 EDT 2020</td>
+<td>Started on:</td><td>Tue Oct 13 23:00:24 EDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (9 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (10 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,26 +76,22 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='test.AppiumFramework.HomeTest.setUp()'><b>setUp</b><br>Test class: test.AppiumFramework.HomeTest</td>
-<td><div><pre>io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\lib\main.js, --port, 4723, --address, 0.0.0.0, --chromedriver-executable, C:\Selenium\ChromeDriver\v69\chromedriver.exe] 
-
-	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:164)
-	at test.AppiumFramework.AppTest.startServer(AppTest.java:68)
+<td><div><pre>io.appium.java_client.service.local.InvalidServerInstanceException: The main Appium script does not exist at &apos;C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\npm\node_modules\appium\build\lib\main.js&apos;
+	at io.appium.java_client.service.local.AppiumServiceBuilder.findMainScript(AppiumServiceBuilder.java:161)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.loadPathToMainScript(AppiumServiceBuilder.java:300)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:381)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:358)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.buildService(AppiumDriverLocalService.java:87)
+	at test.AppiumFramework.AppTest.startServer(AppTest.java:64)
 	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/wd/hub/status] to be available after 120003 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:129)
-	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:151)
-	... 25 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 27 more
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1370074462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1370074462'><pre>io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\lib\main.js, --port, 4723, --address, 0.0.0.0, --chromedriver-executable, C:\Selenium\ChromeDriver\v69\chromedriver.exe] 
-
-	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:164)
-	at test.AppiumFramework.AppTest.startServer(AppTest.java:68)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1948810915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1948810915'><pre>io.appium.java_client.service.local.InvalidServerInstanceException: The main Appium script does not exist at &apos;C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\npm\node_modules\appium\build\lib\main.js&apos;
+	at io.appium.java_client.service.local.AppiumServiceBuilder.findMainScript(AppiumServiceBuilder.java:161)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.loadPathToMainScript(AppiumServiceBuilder.java:300)
+	at io.appium.java_client.service.local.AppiumServiceBuilder.createArgs(AppiumServiceBuilder.java:381)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:358)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.buildService(AppiumDriverLocalService.java:87)
+	at test.AppiumFramework.AppTest.startServer(AppTest.java:64)
 	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -120,18 +116,8 @@ Caused by: java.util.concurrent.TimeoutException
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/wd/hub/status] to be available after 120003 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:129)
-	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:151)
-	... 25 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 27 more
 </pre></div></td>
-<td>120</td>
+<td>0</td>
 <td>test.AppiumFramework.HomeTest@272113c4</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -144,7 +130,7 @@ Caused by: java.util.concurrent.TimeoutException
 <tr>
 <td title='test.AppiumFramework.CartTest.initMethod()'><b>initMethod</b><br>Test class: test.AppiumFramework.CartTest</td>
 <td></td>
-<td>-1602640413</td>
+<td>-1602644424</td>
 <td>test.AppiumFramework.CartTest@11392934</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>

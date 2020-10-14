@@ -110,7 +110,7 @@ public class AppTest {
 		File appDir = new File("src");
 		File app = new File(appDir, (String) prop.get("GeneralStoreApp"));
 		dc = new DesiredCapabilities();
-		String device = "emulator";//System.getProperty("deviceName");
+		String device = System.getProperty("deviceName");
 		//dc.setCapability(MobileCapabilityType.PLATFORM_NAME, prop.get("cap_platName"));
 		//restartADBServer();
 		if (device.contains("emulator"))	{

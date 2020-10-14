@@ -21,6 +21,7 @@ import static io.appium.java_client.touch.offset.ElementOption.element;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileBrowserType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
@@ -60,6 +61,8 @@ public class AppTest {
 	
 	public AppiumDriverLocalService startServer() throws InterruptedException	{
 		AppiumServiceBuilder serviceBuilder = new AppiumServiceBuilder();
+		//serviceBuilder.usingDriverExecutable(new File("C:\\Program Files\\nodejs\\node.exe"));
+		//serviceBuilder.withAppiumJS(new File("C:\\Users\\Basement\\AppData\\Roaming\\npm\\node_modules\\appium\\lib\\main.js"));
 		serviceBuilder.withArgument(ArgTest.CHROME_DRIVER, prop.getProperty("chrome_driver"));
 		service = AppiumDriverLocalService.buildService(serviceBuilder);
 		if (!checkIfServerIsRunning(4723))	{
@@ -113,20 +116,26 @@ public class AppTest {
 		String device = System.getProperty("deviceName");
 		//dc.setCapability(MobileCapabilityType.PLATFORM_NAME, prop.get("cap_platName"));
 		//restartADBServer();
-		if (device.contains("emulator"))	{
+		//if (device.contains("emulator"))	{
+			//
 			//dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, prop.get("emu_pv"));
-			//dc.setCapability(MobileCapabilityType.DEVICE_NAME, "emu_dn");
-			restartADBServer();
-			startEmulator();
-		}
-		//else if (((String) prop.get("device")).equalsIgnoreCase("real device"))	{
+			//dc.setCapability(MobileCapabilityType.DEVICE_NAME, prop.get("emu_dn"));
+			//restartADBServer();
+			//startEmulator();
+		//}
+		//else {
+			//dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, prop.get("pkg"));
+			//dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, prop.get("act"));
 			//dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "rdev_pv");
 			//dc.setCapability(MobileCapabilityType.DEVICE_NAME, "rdev_dn");
 		//}
 	    dc.setCapability(MobileCapabilityType.DEVICE_NAME, device);
+	    //dc.setCapability(AndroidMobileCapabilityType.CHROMEDRIVER_USE_SYSTEM_EXECUTABLE, false);
+	    //dc.setCapability(MobileCapabilityType.BROWSER_NAME, MobileBrowserType.CHROME);
+	    dc.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+	    dc.setCapability("chromedriverExecutable", "C:\\Selenium\\ChromeDriver\\v69\\chromedriver.exe");
 		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, prop.get("cap_autoName"));
 		dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 14);
-		dc.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 		URL url = new URL((String) prop.get("server"));
 		AndroidDriver<AndroidElement> d = new AndroidDriver<AndroidElement>(url,dc);
 		d.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

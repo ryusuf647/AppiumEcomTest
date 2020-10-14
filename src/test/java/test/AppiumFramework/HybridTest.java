@@ -56,8 +56,8 @@ public class HybridTest extends AppTest {
 	@AfterSuite
 	public void tearDown() throws IOException	{
 		d.quit();
-		stopEmulator();
-		killADBServer();
-		service.stop();
+		//stopEmulator();
+		//killADBServer();
+		//service.stop();
 	}
 }

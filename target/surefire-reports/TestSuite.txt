@@ -1,8 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 25, Failures: 1, Errors: 0, Skipped: 24, Time elapsed: 2.029 s <<< FAILURE! - in TestSuite
-test.AppiumFramework.HomeTest.setUp  Time elapsed: 1.447 s  <<< FAILURE!
-io.appium.java_client.service.local.InvalidServerInstanceException: The main Appium script does not exist at 'C:\WINDOWS\system32\config\systemprofile\AppData\Roaming\npm\node_modules\appium\build\lib\main.js'
-	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
+Tests run: 19, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 58.831 s <<< FAILURE! - in TestSuite
+test.AppiumFramework.HomeTest.dropdownLabel  Time elapsed: 0.771 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [false] but found [true]
+	at test.AppiumFramework.HomeTest.dropdownLabel(HomeTest.java:41)
+
+test.AppiumFramework.ProductsTest.toastMsg[Please add some product at first](1)  Time elapsed: 1.239 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [cheers!] but found [Please add some product at first]
+	at test.AppiumFramework.ProductsTest.toastMsg(ProductsTest.java:56)
 

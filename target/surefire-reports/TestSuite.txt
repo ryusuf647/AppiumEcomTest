@@ -1,14 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 25, Failures: 1, Errors: 0, Skipped: 24, Time elapsed: 12.032 s <<< FAILURE! - in TestSuite
-test.AppiumFramework.HomeTest.setUp  Time elapsed: 11.402 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Connection refused: no further information
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:21)
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:21)
+Tests run: 25, Failures: 1, Errors: 0, Skipped: 24, Time elapsed: 121.466 s <<< FAILURE! - in TestSuite
+test.AppiumFramework.HomeTest.setUp  Time elapsed: 120.869 s  <<< FAILURE!
+io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: 
+The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\lib\main.js, --port, 4723, --address, 0.0.0.0, --chromedriver-executable, C:\Selenium\ChromeDriver\v69\chromedriver.exe] 
+
+	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/wd/hub/status] to be available after 120003 ms
+	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
+Caused by: java.util.concurrent.TimeoutException
+	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
 

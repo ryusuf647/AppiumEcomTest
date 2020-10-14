@@ -314,59 +314,22 @@
                   <a name="nativeAppView">
                   </a> <!-- nativeAppView -->
                   <span class="method-name">nativeAppView</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Connection refused: no further information
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-UUGSSKP&apos;, ip: &apos;192.168.188.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$5(AppiumCommandExecutor.java:251)
-	at java.base/java.util.Optional.orElseGet(Optional.java:362)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
-	at test.AppiumFramework.AppTest.Capabilities(AppTest.java:132)
-	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:21)
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:579)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:339)
-	at java.base/java.net.Socket.connect(Socket.java:603)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	... 36 more
-... Removed 27 stack frames
+                  <div class="stack-trace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\lib\main.js, --port, 4723, --address, 0.0.0.0, --chromedriver-executable, C:\Selenium\ChromeDriver\v69\chromedriver.exe] 
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:164)
+	at test.AppiumFramework.AppTest.startServer(AppTest.java:68)
+	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/wd/hub/status] to be available after 120003 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:129)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:151)
+	... 25 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 27 more
+... Removed 23 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -375,59 +338,22 @@ Caused by: java.net.ConnectException: Connection refused: no further information
                   <a name="webView">
                   </a> <!-- webView -->
                   <span class="method-name">webView</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Connection refused: no further information
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-UUGSSKP&apos;, ip: &apos;192.168.188.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$5(AppiumCommandExecutor.java:251)
-	at java.base/java.util.Optional.orElseGet(Optional.java:362)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
-	at test.AppiumFramework.AppTest.Capabilities(AppTest.java:132)
-	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:21)
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:579)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:339)
-	at java.base/java.net.Socket.connect(Socket.java:603)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	... 36 more
-... Removed 27 stack frames
+                  <div class="stack-trace">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\lib\main.js, --port, 4723, --address, 0.0.0.0, --chromedriver-executable, C:\Selenium\ChromeDriver\v69\chromedriver.exe] 
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:164)
+	at test.AppiumFramework.AppTest.startServer(AppTest.java:68)
+	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/wd/hub/status] to be available after 120003 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:129)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:151)
+	... 25 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 27 more
+... Removed 23 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -600,31 +526,31 @@ data.setCell(0, 1, 'nameField')
 data.setCell(0, 2, 'test.AppiumFramework.HomeTest')
 data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'genderSelect')
+data.setCell(1, 1, 'pageTitle')
 data.setCell(1, 2, 'test.AppiumFramework.HomeTest')
 data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'dropdownLabel')
+data.setCell(2, 1, 'genderSelect')
 data.setCell(2, 2, 'test.AppiumFramework.HomeTest')
 data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'login')
+data.setCell(3, 1, 'toastMsg')
 data.setCell(3, 2, 'test.AppiumFramework.HomeTest')
 data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'selectCountry')
+data.setCell(4, 1, 'dropdownLabel')
 data.setCell(4, 2, 'test.AppiumFramework.HomeTest')
 data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'pageTitle')
+data.setCell(5, 1, 'selectCountry')
 data.setCell(5, 2, 'test.AppiumFramework.HomeTest')
 data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'toastMsg')
+data.setCell(6, 1, 'login')
 data.setCell(6, 2, 'test.AppiumFramework.HomeTest')
 data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'locateItems')
+data.setCell(7, 1, 'toastMsg')
 data.setCell(7, 2, 'test.AppiumFramework.ProductsTest')
 data.setCell(7, 3, 0);
 data.setCell(8, 0, 8)
@@ -632,7 +558,7 @@ data.setCell(8, 1, 'productsPage')
 data.setCell(8, 2, 'test.AppiumFramework.ProductsTest')
 data.setCell(8, 3, 0);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'toastMsg')
+data.setCell(9, 1, 'locateItems')
 data.setCell(9, 2, 'test.AppiumFramework.ProductsTest')
 data.setCell(9, 3, 0);
 data.setCell(10, 0, 10)
@@ -640,27 +566,27 @@ data.setCell(10, 1, 'gotoCart')
 data.setCell(10, 2, 'test.AppiumFramework.ProductsTest')
 data.setCell(10, 3, 0);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'validateTC')
+data.setCell(11, 1, 'cartPage')
 data.setCell(11, 2, 'test.AppiumFramework.CartTest')
 data.setCell(11, 3, 0);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'cartPage')
+data.setCell(12, 1, 'validateCartTotal')
 data.setCell(12, 2, 'test.AppiumFramework.CartTest')
 data.setCell(12, 3, 0);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'validatePurchaseBtn')
+data.setCell(13, 1, 'validateChkBox')
 data.setCell(13, 2, 'test.AppiumFramework.CartTest')
 data.setCell(13, 3, 0);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'validateCartTotal')
+data.setCell(14, 1, 'validatePurchaseBtn')
 data.setCell(14, 2, 'test.AppiumFramework.CartTest')
 data.setCell(14, 3, 0);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'validateChkBox')
+data.setCell(15, 1, 'validateCartItems')
 data.setCell(15, 2, 'test.AppiumFramework.CartTest')
 data.setCell(15, 3, 0);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'validateCartItems')
+data.setCell(16, 1, 'validateTC')
 data.setCell(16, 2, 'test.AppiumFramework.CartTest')
 data.setCell(16, 3, 0);
 data.setCell(17, 0, 17)
@@ -710,108 +636,108 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">initMethod</span>
-                <span class="method-start">10680 ms</span>
+                <span class="method-start">120123 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">pageTitle(General Store)</span>
-                <span class="method-start">10693 ms</span>
+                <span class="method-start">120133 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">dropdownLabel</span>
-                <span class="method-start">10707 ms</span>
+                <span class="method-start">120142 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectCountry(Algeria)</span>
-                <span class="method-start">10708 ms</span>
+                <span class="method-start">120143 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">nameField(Enter name here, Joe)</span>
-                <span class="method-start">10709 ms</span>
+                <span class="method-start">120143 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">genderSelect</span>
-                <span class="method-start">10711 ms</span>
+                <span class="method-start">120144 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">toastMsg(Please enter your name)</span>
-                <span class="method-start">10711 ms</span>
+                <span class="method-start">120145 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login(Let's  Shop)</span>
-                <span class="method-start">10712 ms</span>
+                <span class="method-start">120145 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.AppiumFramework.ProductsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initMethod</span>
-                <span class="method-start">11041 ms</span>
+                <span class="method-start">120483 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">productsPage(Products)</span>
-                <span class="method-start">11041 ms</span>
+                <span class="method-start">120484 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">toastMsg(Please add some product at first)</span>
-                <span class="method-start">11042 ms</span>
+                <span class="method-start">120484 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">locateItems(android.widget.TextView, ADDED TO CART)</span>
-                <span class="method-start">11043 ms</span>
+                <span class="method-start">120485 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">gotoCart</span>
-                <span class="method-start">11043 ms</span>
+                <span class="method-start">120486 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">convertFromPriceList</span>
-                <span class="method-start">11044 ms</span>
+                <span class="method-start">120487 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.AppiumFramework.CartTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initMethod</span>
-                <span class="method-start">11067 ms</span>
+                <span class="method-start">120513 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">cartPage(Cart)</span>
-                <span class="method-start">11067 ms</span>
+                <span class="method-start">120513 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateCartItems(Not Found)</span>
-                <span class="method-start">11068 ms</span>
+                <span class="method-start">120514 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateCartTotal</span>
-                <span class="method-start">11069 ms</span>
+                <span class="method-start">120515 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateChkBox(Send me e-mails on discounts related to selected products in future)</span>
-                <span class="method-start">11070 ms</span>
+                <span class="method-start">120515 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateTC(Please read our terms of conditions, Terms Of Conditions, Lorem Ipsum is simply dummy text of the pr...)</span>
-                <span class="method-start">11071 ms</span>
+                <span class="method-start">120520 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validatePurchaseBtn(Visit to the website to complete purchase)</span>
-                <span class="method-start">11073 ms</span>
+                <span class="method-start">120520 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.AppiumFramework.HybridTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">webView</span>
-                <span class="method-start">11109 ms</span>
+                <span class="method-start">120547 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">nativeAppView</span>
-                <span class="method-start">11113 ms</span>
+                <span class="method-start">120551 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11158 ms</span>
+                <span class="method-start">120593 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

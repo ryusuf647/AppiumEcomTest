@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="19" passed="0" failed="0" skipped="19">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-13T20:40:18 EDT" name="Suite" finished-at="2020-10-13T20:40:19 EDT" duration-ms="447">
+  <suite started-at="2020-10-13T21:53:33 EDT" name="Suite" finished-at="2020-10-13T21:53:33 EDT" duration-ms="441">
     <groups>
     </groups>
-    <test started-at="2020-10-13T20:40:18 EDT" name="Home Page Test" finished-at="2020-10-13T20:40:18 EDT" duration-ms="44">
+    <test started-at="2020-10-13T21:53:33 EDT" name="Home Page Test" finished-at="2020-10-13T21:53:33 EDT" duration-ms="34">
       <class name="test.AppiumFramework.HomeTest">
-        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T20:40:18 EDT" name="initMethod" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1602636018907" status="SKIP">
+        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T21:53:33 EDT" name="initMethod" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1602640413497" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initMethod -->
-        <test-method signature="pageTitle(java.lang.String)[pri:1, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T20:40:18 EDT" name="pageTitle" finished-at="2020-10-13T20:40:18 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="pageTitle(java.lang.String)[pri:1, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T21:53:33 EDT" name="pageTitle" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -22,22 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageTitle -->
-        <test-method signature="dropdownLabel()[pri:2, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T20:40:18 EDT" name="dropdownLabel" finished-at="2020-10-13T20:40:18 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="dropdownLabel()[pri:2, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T21:53:33 EDT" name="dropdownLabel" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dropdownLabel -->
-        <test-method signature="selectCountry(java.lang.String)[pri:3, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T20:40:18 EDT" name="selectCountry" finished-at="2020-10-13T20:40:18 EDT" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Algeria]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCountry -->
-        <test-method signature="nameField(java.lang.String, java.lang.String)[pri:4, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T20:40:18 EDT" name="nameField" finished-at="2020-10-13T20:40:18 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="nameField(java.lang.String, java.lang.String)[pri:4, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T21:53:33 EDT" name="nameField" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -53,11 +42,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nameField -->
-        <test-method signature="genderSelect()[pri:5, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T20:40:18 EDT" name="genderSelect" finished-at="2020-10-13T20:40:18 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="selectCountry(java.lang.String)[pri:3, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T21:53:33 EDT" name="selectCountry" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Algeria]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCountry -->
+        <test-method signature="genderSelect()[pri:5, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T21:53:33 EDT" name="genderSelect" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- genderSelect -->
-        <test-method signature="toastMsg(java.lang.String)[pri:6, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T20:40:18 EDT" name="toastMsg" finished-at="2020-10-13T20:40:18 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="toastMsg(java.lang.String)[pri:6, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T21:53:33 EDT" name="toastMsg" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -68,7 +68,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toastMsg -->
-        <test-method signature="login(java.lang.String)[pri:7, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T20:40:18 EDT" name="login" finished-at="2020-10-13T20:40:18 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="login(java.lang.String)[pri:7, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T21:53:33 EDT" name="login" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -81,24 +81,13 @@
         </test-method> <!-- login -->
       </class> <!-- test.AppiumFramework.HomeTest -->
     </test> <!-- Home Page Test -->
-    <test started-at="2020-10-13T20:40:19 EDT" name="Products Page Test" finished-at="2020-10-13T20:40:19 EDT" duration-ms="4">
+    <test started-at="2020-10-13T21:53:33 EDT" name="Products Page Test" finished-at="2020-10-13T21:53:33 EDT" duration-ms="4">
       <class name="test.AppiumFramework.ProductsTest">
-        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T20:40:19 EDT" name="initMethod" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1602636019268" status="SKIP">
+        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T21:53:33 EDT" name="initMethod" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1602640413857" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initMethod -->
-        <test-method signature="productsPage(java.lang.String)[pri:1, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T20:40:19 EDT" name="productsPage" finished-at="2020-10-13T20:40:19 EDT" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Products]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productsPage -->
-        <test-method signature="toastMsg(java.lang.String)[pri:2, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T20:40:19 EDT" name="toastMsg" finished-at="2020-10-13T20:40:19 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="toastMsg(java.lang.String)[pri:2, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T21:53:33 EDT" name="toastMsg" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -109,7 +98,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toastMsg -->
-        <test-method signature="locateItems(java.lang.String, java.lang.String)[pri:3, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T20:40:19 EDT" name="locateItems" finished-at="2020-10-13T20:40:19 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="productsPage(java.lang.String)[pri:1, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T21:53:33 EDT" name="productsPage" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Products]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productsPage -->
+        <test-method signature="locateItems(java.lang.String, java.lang.String)[pri:3, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T21:53:33 EDT" name="locateItems" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -125,23 +125,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- locateItems -->
-        <test-method signature="gotoCart()[pri:4, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T20:40:19 EDT" name="gotoCart" finished-at="2020-10-13T20:40:19 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="gotoCart()[pri:4, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T21:53:33 EDT" name="gotoCart" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotoCart -->
-        <test-method is-config="true" signature="convertFromPriceList()[pri:0, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T20:40:19 EDT" name="convertFromPriceList" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1602636019271" status="SKIP">
+        <test-method is-config="true" signature="convertFromPriceList()[pri:0, instance:test.AppiumFramework.ProductsTest@298a5e20]" started-at="2020-10-13T21:53:33 EDT" name="convertFromPriceList" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1602640413861" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- convertFromPriceList -->
       </class> <!-- test.AppiumFramework.ProductsTest -->
     </test> <!-- Products Page Test -->
-    <test started-at="2020-10-13T20:40:19 EDT" name="Cart Page Test" finished-at="2020-10-13T20:40:19 EDT" duration-ms="7">
+    <test started-at="2020-10-13T21:53:33 EDT" name="Cart Page Test" finished-at="2020-10-13T21:53:33 EDT" duration-ms="9">
       <class name="test.AppiumFramework.CartTest">
-        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T20:40:19 EDT" name="initMethod" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1602636019294" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initMethod -->
-        <test-method signature="cartPage(java.lang.String)[pri:1, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T20:40:19 EDT" name="cartPage" finished-at="2020-10-13T20:40:19 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="cartPage(java.lang.String)[pri:1, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T21:53:33 EDT" name="cartPage" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -152,7 +148,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartPage -->
-        <test-method signature="validateCartItems(java.lang.String)[pri:2, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T20:40:19 EDT" name="validateCartItems" finished-at="2020-10-13T20:40:19 EDT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T21:53:33 EDT" name="initMethod" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1602640413887" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method signature="validateCartItems(java.lang.String)[pri:2, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T21:53:33 EDT" name="validateCartItems" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -163,11 +163,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCartItems -->
-        <test-method signature="validateCartTotal()[pri:3, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T20:40:19 EDT" name="validateCartTotal" finished-at="2020-10-13T20:40:19 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="validateCartTotal()[pri:3, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T21:53:33 EDT" name="validateCartTotal" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCartTotal -->
-        <test-method signature="validateChkBox(java.lang.String)[pri:4, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T20:40:19 EDT" name="validateChkBox" finished-at="2020-10-13T20:40:19 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="validateChkBox(java.lang.String)[pri:4, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T21:53:33 EDT" name="validateChkBox" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -178,7 +178,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateChkBox -->
-        <test-method signature="validateTC(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T20:40:19 EDT" name="validateTC" finished-at="2020-10-13T20:40:19 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="validatePurchaseBtn(java.lang.String)[pri:6, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T21:53:33 EDT" name="validatePurchaseBtn" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Visit to the website to complete purchase]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePurchaseBtn -->
+        <test-method signature="validateTC(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T21:53:33 EDT" name="validateTC" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -214,50 +225,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTC -->
-        <test-method signature="validatePurchaseBtn(java.lang.String)[pri:6, instance:test.AppiumFramework.CartTest@11392934]" started-at="2020-10-13T20:40:19 EDT" name="validatePurchaseBtn" finished-at="2020-10-13T20:40:19 EDT" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Visit to the website to complete purchase]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatePurchaseBtn -->
       </class> <!-- test.AppiumFramework.CartTest -->
     </test> <!-- Cart Page Test -->
-    <test started-at="2020-10-13T20:40:19 EDT" name="Hybrid App Test" finished-at="2020-10-13T20:40:19 EDT" duration-ms="7">
+    <test started-at="2020-10-13T21:53:33 EDT" name="Hybrid App Test" finished-at="2020-10-13T21:53:33 EDT" duration-ms="7">
       <class name="test.AppiumFramework.HybridTest">
-        <test-method signature="webView()[pri:1, instance:test.AppiumFramework.HybridTest@7d0b7e3c]" started-at="2020-10-13T20:40:19 EDT" name="webView" finished-at="2020-10-13T20:40:19 EDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="webView()[pri:1, instance:test.AppiumFramework.HybridTest@7d0b7e3c]" started-at="2020-10-13T21:53:33 EDT" name="webView" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
             <message>
-              <![CDATA[Connection refused: no further information
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver]]>
+              <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\lib\main.js, --port, 4723, --address, 0.0.0.0, --chromedriver-executable, C:\Selenium\ChromeDriver\v69\chromedriver.exe] 
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: no further information
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$5(AppiumCommandExecutor.java:251)
-at java.base/java.util.Optional.orElseGet(Optional.java:362)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:88)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:94)
-at test.AppiumFramework.AppTest.Capabilities(AppTest.java:132)
-at test.AppiumFramework.HomeTest.setUp(HomeTest.java:21)
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\lib\main.js, --port, 4723, --address, 0.0.0.0, --chromedriver-executable, C:\Selenium\ChromeDriver\v69\chromedriver.exe] 
+
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:164)
+at test.AppiumFramework.AppTest.startServer(AppTest.java:68)
+at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -281,77 +264,34 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: java.net.ConnectException: Connection refused: no further information
-at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:579)
-at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:339)
-at java.base/java.net.Socket.connect(Socket.java:603)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-... 36 more
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/wd/hub/status] to be available after 120003 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:129)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:151)
+... 25 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+... 27 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webView -->
-        <test-method signature="nativeAppView()[pri:2, instance:test.AppiumFramework.HybridTest@7d0b7e3c]" started-at="2020-10-13T20:40:19 EDT" name="nativeAppView" finished-at="2020-10-13T20:40:19 EDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="nativeAppView()[pri:2, instance:test.AppiumFramework.HybridTest@7d0b7e3c]" started-at="2020-10-13T21:53:33 EDT" name="nativeAppView" finished-at="2020-10-13T21:53:33 EDT" duration-ms="0" status="SKIP">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
             <message>
-              <![CDATA[Connection refused: no further information
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver]]>
+              <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\lib\main.js, --port, 4723, --address, 0.0.0.0, --chromedriver-executable, C:\Selenium\ChromeDriver\v69\chromedriver.exe] 
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: no further information
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$5(AppiumCommandExecutor.java:251)
-at java.base/java.util.Optional.orElseGet(Optional.java:362)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:88)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:94)
-at test.AppiumFramework.AppTest.Capabilities(AppTest.java:132)
-at test.AppiumFramework.HomeTest.setUp(HomeTest.java:21)
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\lib\main.js, --port, 4723, --address, 0.0.0.0, --chromedriver-executable, C:\Selenium\ChromeDriver\v69\chromedriver.exe] 
+
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:164)
+at test.AppiumFramework.AppTest.startServer(AppTest.java:68)
+at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -375,83 +315,40 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: java.net.ConnectException: Connection refused: no further information
-at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:579)
-at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:339)
-at java.base/java.net.Socket.connect(Socket.java:603)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-... 36 more
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/wd/hub/status] to be available after 120003 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:129)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:151)
+... 25 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+... 27 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nativeAppView -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AppiumFramework.HybridTest@7d0b7e3c]" started-at="2020-10-13T20:40:19 EDT" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1602636019385" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AppiumFramework.HybridTest@7d0b7e3c]" started-at="2020-10-13T21:53:33 EDT" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1602640413967" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- test.AppiumFramework.HybridTest -->
       <class name="test.AppiumFramework.HomeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T20:40:08 EDT" name="setUp" finished-at="2020-10-13T20:40:18 EDT" duration-ms="10661" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AppiumFramework.HomeTest@272113c4]" started-at="2020-10-13T21:51:33 EDT" name="setUp" finished-at="2020-10-13T21:53:33 EDT" duration-ms="120106" status="FAIL">
+          <exception class="io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException">
             <message>
-              <![CDATA[Connection refused: no further information
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver]]>
+              <![CDATA[The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\lib\main.js, --port, 4723, --address, 0.0.0.0, --chromedriver-executable, C:\Selenium\ChromeDriver\v69\chromedriver.exe] 
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: no further information
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$5(AppiumCommandExecutor.java:251)
-at java.base/java.util.Optional.orElseGet(Optional.java:362)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:88)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:94)
-at test.AppiumFramework.AppTest.Capabilities(AppTest.java:132)
-at test.AppiumFramework.HomeTest.setUp(HomeTest.java:21)
+              <![CDATA[io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\lib\main.js, --port, 4723, --address, 0.0.0.0, --chromedriver-executable, C:\Selenium\ChromeDriver\v69\chromedriver.exe] 
+
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:164)
+at test.AppiumFramework.AppTest.startServer(AppTest.java:68)
+at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -475,45 +372,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: java.net.ConnectException: Connection refused: no further information
-at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:579)
-at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:339)
-at java.base/java.net.Socket.connect(Socket.java:603)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-... 36 more
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/wd/hub/status] to be available after 120003 ms
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:129)
+at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:151)
+... 25 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+... 27 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Android Automation Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct. 13, 2020 08:27:30 p.m.</span></a>
+<a href="#"><span class="badge badge-primary">Oct. 13, 2020 08:44:45 p.m.</span></a>
 </li>
 </ul>
 </div>
@@ -71,7 +71,8 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,25 +80,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="skip" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">pageTitle</p>
             <p class="text-sm">
-              <span>20:29:30 p.m.</span> / <span>00:00:005</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:02 p.m.</span> / <span>00:03:451</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">pageTitle</h5>
-<span class='badge badge-success'>10.13.2020 20:29:30</span>
-<span class='badge badge-danger'>10.13.2020 20:29:30</span>
-<span class='badge badge-default'>00:00:005</span>
+<h5 class="test-status text-pass">pageTitle</h5>
+<span class='badge badge-success'>10.13.2020 20:45:02</span>
+<span class='badge badge-danger'>10.13.2020 20:45:06</span>
+<span class='badge badge-default'>00:03:451</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 </div>
@@ -106,17 +107,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:30 p.m.</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:45:06 p.m.</td>
         <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:30 p.m.</td>
-        <td>
-          
+          PASSED!
         </td>
       </tr>
   </tbody>
@@ -124,43 +118,85 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="2"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">dropdownLabel</p>
             <p class="text-sm">
-              <span>20:29:30 p.m.</span> / <span>00:00:000</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:06 p.m.</span> / <span>00:00:825</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">dropdownLabel</h5>
-<span class='badge badge-success'>10.13.2020 20:29:30</span>
-<span class='badge badge-danger'>10.13.2020 20:29:30</span>
-<span class='badge badge-default'>00:00:000</span>
+<h5 class="test-status text-fail">dropdownLabel</h5>
+<span class='badge badge-success'>10.13.2020 20:45:06</span>
+<span class='badge badge-danger'>10.13.2020 20:45:06</span>
+<span class='badge badge-default'>00:00:825</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='C:\Users\Basement\eclipse-workspace\AppiumFramework\test-output\Screen Captures\dropdownLabel.jpg' src="C:\Users\Basement\eclipse-workspace\AppiumFramework\test-output\Screen Captures\dropdownLabel.jpg">
+    
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:30 p.m.</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:45:06 p.m.</td>
         <td>
-          SKIPPED!
+          FAILED!
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:30 p.m.</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:45:06 p.m.</td>
         <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at test.AppiumFramework.HomeTest.dropdownLabel(HomeTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</textarea>
           
         </td>
       </tr>
@@ -169,25 +205,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="3"
+        <li class="test-item"  status="pass" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">selectCountry</p>
             <p class="text-sm">
-              <span>20:29:30 p.m.</span> / <span>00:00:000</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:06 p.m.</span> / <span>00:01:819</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">selectCountry</h5>
-<span class='badge badge-success'>10.13.2020 20:29:30</span>
-<span class='badge badge-danger'>10.13.2020 20:29:30</span>
-<span class='badge badge-default'>00:00:000</span>
+<h5 class="test-status text-pass">selectCountry</h5>
+<span class='badge badge-success'>10.13.2020 20:45:06</span>
+<span class='badge badge-danger'>10.13.2020 20:45:08</span>
+<span class='badge badge-default'>00:01:819</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 </div>
 </div>
@@ -196,17 +232,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:30 p.m.</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:45:08 p.m.</td>
         <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:30 p.m.</td>
-        <td>
-          
+          PASSED!
         </td>
       </tr>
   </tbody>
@@ -214,25 +243,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="4"
+        <li class="test-item"  status="pass" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">nameField</p>
             <p class="text-sm">
-              <span>20:29:30 p.m.</span> / <span>00:00:001</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:08 p.m.</span> / <span>00:00:802</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">nameField</h5>
-<span class='badge badge-success'>10.13.2020 20:29:30</span>
-<span class='badge badge-danger'>10.13.2020 20:29:30</span>
-<span class='badge badge-default'>00:00:001</span>
+<h5 class="test-status text-pass">nameField</h5>
+<span class='badge badge-success'>10.13.2020 20:45:08</span>
+<span class='badge badge-danger'>10.13.2020 20:45:09</span>
+<span class='badge badge-default'>00:00:802</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 </div>
 </div>
@@ -241,17 +270,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:30 p.m.</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:45:09 p.m.</td>
         <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:30 p.m.</td>
-        <td>
-          
+          PASSED!
         </td>
       </tr>
   </tbody>
@@ -259,25 +281,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="5"
+        <li class="test-item"  status="pass" test-id="5"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">genderSelect</p>
             <p class="text-sm">
-              <span>20:29:30 p.m.</span> / <span>00:00:000</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:09 p.m.</span> / <span>00:00:235</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">genderSelect</h5>
-<span class='badge badge-success'>10.13.2020 20:29:30</span>
-<span class='badge badge-danger'>10.13.2020 20:29:30</span>
-<span class='badge badge-default'>00:00:000</span>
+<h5 class="test-status text-pass">genderSelect</h5>
+<span class='badge badge-success'>10.13.2020 20:45:09</span>
+<span class='badge badge-danger'>10.13.2020 20:45:09</span>
+<span class='badge badge-default'>00:00:235</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 </div>
 </div>
@@ -286,17 +308,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:30 p.m.</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:45:09 p.m.</td>
         <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:30 p.m.</td>
-        <td>
-          
+          PASSED!
         </td>
       </tr>
   </tbody>
@@ -304,25 +319,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="6"
+        <li class="test-item"  status="pass" test-id="6"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">toastMsg</p>
             <p class="text-sm">
-              <span>20:29:30 p.m.</span> / <span>00:00:000</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:09 p.m.</span> / <span>00:01:816</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">toastMsg</h5>
-<span class='badge badge-success'>10.13.2020 20:29:30</span>
-<span class='badge badge-danger'>10.13.2020 20:29:30</span>
-<span class='badge badge-default'>00:00:000</span>
+<h5 class="test-status text-pass">toastMsg</h5>
+<span class='badge badge-success'>10.13.2020 20:45:09</span>
+<span class='badge badge-danger'>10.13.2020 20:45:11</span>
+<span class='badge badge-default'>00:01:816</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 </div>
 </div>
@@ -331,17 +346,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:30 p.m.</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:45:11 p.m.</td>
         <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:30 p.m.</td>
-        <td>
-          
+          PASSED!
         </td>
       </tr>
   </tbody>
@@ -349,25 +357,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="7"
+        <li class="test-item"  status="pass" test-id="7"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">login</p>
             <p class="text-sm">
-              <span>20:29:30 p.m.</span> / <span>00:00:001</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:11 p.m.</span> / <span>00:02:654</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">login</h5>
-<span class='badge badge-success'>10.13.2020 20:29:30</span>
-<span class='badge badge-danger'>10.13.2020 20:29:30</span>
-<span class='badge badge-default'>00:00:001</span>
+<h5 class="test-status text-pass">login</h5>
+<span class='badge badge-success'>10.13.2020 20:45:11</span>
+<span class='badge badge-danger'>10.13.2020 20:45:14</span>
+<span class='badge badge-default'>00:02:654</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 </div>
 </div>
@@ -376,17 +384,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:30 p.m.</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:45:14 p.m.</td>
         <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:30 p.m.</td>
-        <td>
-          
+          PASSED!
         </td>
       </tr>
   </tbody>
@@ -394,25 +395,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="8"
+        <li class="test-item"  status="pass" test-id="8"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">productsPage</p>
             <p class="text-sm">
-              <span>20:29:31 p.m.</span> / <span>00:00:001</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:14 p.m.</span> / <span>00:00:326</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">productsPage</h5>
-<span class='badge badge-success'>10.13.2020 20:29:31</span>
-<span class='badge badge-danger'>10.13.2020 20:29:31</span>
-<span class='badge badge-default'>00:00:001</span>
+<h5 class="test-status text-pass">productsPage</h5>
+<span class='badge badge-success'>10.13.2020 20:45:14</span>
+<span class='badge badge-danger'>10.13.2020 20:45:14</span>
+<span class='badge badge-default'>00:00:326</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 </div>
 </div>
@@ -421,17 +422,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:45:14 p.m.</td>
         <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
-        <td>
-          
+          PASSED!
         </td>
       </tr>
   </tbody>
@@ -439,43 +433,85 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="9"
+        <li class="test-item"  status="fail" test-id="9"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">toastMsg</p>
             <p class="text-sm">
-              <span>20:29:31 p.m.</span> / <span>00:00:001</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:14 p.m.</span> / <span>00:01:102</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">toastMsg</h5>
-<span class='badge badge-success'>10.13.2020 20:29:31</span>
-<span class='badge badge-danger'>10.13.2020 20:29:31</span>
-<span class='badge badge-default'>00:00:001</span>
+<h5 class="test-status text-fail">toastMsg</h5>
+<span class='badge badge-success'>10.13.2020 20:45:14</span>
+<span class='badge badge-danger'>10.13.2020 20:45:16</span>
+<span class='badge badge-default'>00:01:102</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='C:\Users\Basement\eclipse-workspace\AppiumFramework\test-output\Screen Captures\toastMsg.jpg' src="C:\Users\Basement\eclipse-workspace\AppiumFramework\test-output\Screen Captures\toastMsg.jpg">
+    
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:45:16 p.m.</td>
         <td>
-          SKIPPED!
+          FAILED!
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:45:16 p.m.</td>
         <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	expected [cheers!] but found [Please add some product at first]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at test.AppiumFramework.ProductsTest.toastMsg(ProductsTest.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</textarea>
           
         </td>
       </tr>
@@ -484,25 +520,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="10"
+        <li class="test-item"  status="pass" test-id="10"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">locateItems</p>
             <p class="text-sm">
-              <span>20:29:31 p.m.</span> / <span>00:00:001</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:16 p.m.</span> / <span>00:05:995</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">locateItems</h5>
-<span class='badge badge-success'>10.13.2020 20:29:31</span>
-<span class='badge badge-danger'>10.13.2020 20:29:31</span>
-<span class='badge badge-default'>00:00:001</span>
+<h5 class="test-status text-pass">locateItems</h5>
+<span class='badge badge-success'>10.13.2020 20:45:16</span>
+<span class='badge badge-danger'>10.13.2020 20:45:22</span>
+<span class='badge badge-default'>00:05:995</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 </div>
 </div>
@@ -511,17 +547,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:45:22 p.m.</td>
         <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
-        <td>
-          
+          PASSED!
         </td>
       </tr>
   </tbody>
@@ -529,25 +558,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="11"
+        <li class="test-item"  status="pass" test-id="11"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">gotoCart</p>
             <p class="text-sm">
-              <span>20:29:31 p.m.</span> / <span>00:00:000</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:22 p.m.</span> / <span>00:02:045</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">gotoCart</h5>
-<span class='badge badge-success'>10.13.2020 20:29:31</span>
-<span class='badge badge-danger'>10.13.2020 20:29:31</span>
-<span class='badge badge-default'>00:00:000</span>
+<h5 class="test-status text-pass">gotoCart</h5>
+<span class='badge badge-success'>10.13.2020 20:45:22</span>
+<span class='badge badge-danger'>10.13.2020 20:45:24</span>
+<span class='badge badge-default'>00:02:045</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 </div>
 </div>
@@ -556,17 +585,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:45:24 p.m.</td>
         <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
-        <td>
-          
+          PASSED!
         </td>
       </tr>
   </tbody>
@@ -574,25 +596,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="12"
+        <li class="test-item"  status="pass" test-id="12"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">cartPage</p>
             <p class="text-sm">
-              <span>20:29:31 p.m.</span> / <span>00:00:001</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:24 p.m.</span> / <span>00:00:145</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">cartPage</h5>
-<span class='badge badge-success'>10.13.2020 20:29:31</span>
-<span class='badge badge-danger'>10.13.2020 20:29:31</span>
-<span class='badge badge-default'>00:00:001</span>
+<h5 class="test-status text-pass">cartPage</h5>
+<span class='badge badge-success'>10.13.2020 20:45:24</span>
+<span class='badge badge-danger'>10.13.2020 20:45:24</span>
+<span class='badge badge-default'>00:00:145</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 </div>
 </div>
@@ -601,17 +623,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:45:24 p.m.</td>
         <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
-        <td>
-          
+          PASSED!
         </td>
       </tr>
   </tbody>
@@ -619,25 +634,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="13"
+        <li class="test-item"  status="pass" test-id="13"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validateCartItems</p>
             <p class="text-sm">
-              <span>20:29:31 p.m.</span> / <span>00:00:000</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:24 p.m.</span> / <span>00:00:166</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">validateCartItems</h5>
-<span class='badge badge-success'>10.13.2020 20:29:31</span>
-<span class='badge badge-danger'>10.13.2020 20:29:31</span>
-<span class='badge badge-default'>00:00:000</span>
+<h5 class="test-status text-pass">validateCartItems</h5>
+<span class='badge badge-success'>10.13.2020 20:45:24</span>
+<span class='badge badge-danger'>10.13.2020 20:45:24</span>
+<span class='badge badge-default'>00:00:166</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 </div>
 </div>
@@ -646,17 +661,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:45:24 p.m.</td>
         <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
-        <td>
-          
+          PASSED!
         </td>
       </tr>
   </tbody>
@@ -664,25 +672,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="14"
+        <li class="test-item"  status="pass" test-id="14"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validateCartTotal</p>
             <p class="text-sm">
-              <span>20:29:31 p.m.</span> / <span>00:00:000</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:24 p.m.</span> / <span>00:00:035</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">validateCartTotal</h5>
-<span class='badge badge-success'>10.13.2020 20:29:31</span>
-<span class='badge badge-danger'>10.13.2020 20:29:31</span>
-<span class='badge badge-default'>00:00:000</span>
+<h5 class="test-status text-pass">validateCartTotal</h5>
+<span class='badge badge-success'>10.13.2020 20:45:24</span>
+<span class='badge badge-danger'>10.13.2020 20:45:24</span>
+<span class='badge badge-default'>00:00:035</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 </div>
 </div>
@@ -691,17 +699,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:45:24 p.m.</td>
         <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
-        <td>
-          
+          PASSED!
         </td>
       </tr>
   </tbody>
@@ -709,25 +710,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="15"
+        <li class="test-item"  status="pass" test-id="15"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validateChkBox</p>
             <p class="text-sm">
-              <span>20:29:31 p.m.</span> / <span>00:00:001</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:24 p.m.</span> / <span>00:00:595</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">validateChkBox</h5>
-<span class='badge badge-success'>10.13.2020 20:29:31</span>
-<span class='badge badge-danger'>10.13.2020 20:29:31</span>
-<span class='badge badge-default'>00:00:001</span>
+<h5 class="test-status text-pass">validateChkBox</h5>
+<span class='badge badge-success'>10.13.2020 20:45:24</span>
+<span class='badge badge-danger'>10.13.2020 20:45:25</span>
+<span class='badge badge-default'>00:00:595</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 </div>
 </div>
@@ -736,17 +737,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:45:25 p.m.</td>
         <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
-        <td>
-          
+          PASSED!
         </td>
       </tr>
   </tbody>
@@ -754,263 +748,29 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="16"
+        <li class="test-item"  status="pass" test-id="16"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validateTC</p>
             <p class="text-sm">
-              <span>20:29:31 p.m.</span> / <span>00:00:000</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>20:45:25 p.m.</span> / <span>00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">validateTC</h5>
-<span class='badge badge-success'>10.13.2020 20:29:31</span>
-<span class='badge badge-danger'>10.13.2020 20:29:31</span>
+<h5 class="test-status text-pass">validateTC</h5>
+<span class='badge badge-success'>10.13.2020 20:45:25</span>
+<span class='badge badge-danger'>10.13.2020 20:45:25</span>
 <span class='badge badge-default'>00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
-        <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
-        <td>
-          
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="skip" test-id="17"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">validatePurchaseBtn</p>
-            <p class="text-sm">
-              <span>20:29:31 p.m.</span> / <span>00:00:000</span>
-              <span class="badge skip-bg log float-right">Skip</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-skip">validatePurchaseBtn</h5>
-<span class='badge badge-success'>10.13.2020 20:29:31</span>
-<span class='badge badge-danger'>10.13.2020 20:29:31</span>
-<span class='badge badge-default'>00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
-        <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
-        <td>
-          
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="skip" test-id="18"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">webView</p>
-            <p class="text-sm">
-              <span>20:29:31 p.m.</span> / <span>00:00:002</span>
-              <span class="badge skip-bg log float-right">Skip</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-skip">webView</h5>
-<span class='badge badge-success'>10.13.2020 20:29:31</span>
-<span class='badge badge-danger'>10.13.2020 20:29:31</span>
-<span class='badge badge-default'>00:00:002</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
-        <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
-        <td>
-          <textarea readonly class="code-block">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0, --chromedriver-executable, C:\Selenium\ChromeDriver\v69\chromedriver.exe] 
-
-	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:164)
-	at test.AppiumFramework.AppTest.startServer(AppTest.java:67)
-	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/wd/hub/status] to be available after 120004 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:129)
-	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:151)
-	... 25 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 27 more
-</textarea>
-          
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="skip" test-id="19"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">nativeAppView</p>
-            <p class="text-sm">
-              <span>20:29:31 p.m.</span> / <span>00:00:001</span>
-              <span class="badge skip-bg log float-right">Skip</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-skip">nativeAppView</h5>
-<span class='badge badge-success'>10.13.2020 20:29:31</span>
-<span class='badge badge-danger'>10.13.2020 20:29:31</span>
-<span class='badge badge-default'>00:00:001</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
-        <td>
-          SKIPPED!
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>8:29:31 p.m.</td>
-        <td>
-          <textarea readonly class="code-block">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 4723, --address, 0.0.0.0, --chromedriver-executable, C:\Selenium\ChromeDriver\v69\chromedriver.exe] 
-
-	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:164)
-	at test.AppiumFramework.AppTest.startServer(AppTest.java:67)
-	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:4723/wd/hub/status] to be available after 120004 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:129)
-	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:151)
-	... 25 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 27 more
-</textarea>
-          
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
+</div>          </div>
         </li>
       </ul>
     </div>
@@ -1032,15 +792,15 @@ Caused by: java.util.concurrent.TimeoutException
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-skip'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException</p>
+<p class="name">java.lang.AssertionError</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException</h4>
-<span status="skip" class='badge log badge-skip'>1 skipped</span>
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1051,18 +811,18 @@ Caused by: java.util.concurrent.TimeoutException
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>20:29:31 p.m.</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:45:06 p.m.</td>
 <td>
-<a href="#" class="linked" test-id='18' id='18'>webView</a>
+<a href="#" class="linked" test-id='2' id='2'>dropdownLabel</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>20:29:31 p.m.</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:45:14 p.m.</td>
 <td>
-<a href="#" class="linked" test-id='19' id='19'>nativeAppView</a>
+<a href="#" class="linked" test-id='9' id='9'>toastMsg</a>
 </td>
 </tr>
 </tbody>
@@ -1082,25 +842,25 @@ Caused by: java.util.concurrent.TimeoutException
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct. 13, 2020 08:27:30 p.m.</h3>
+<h3>Oct. 13, 2020 08:44:45 p.m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct. 13, 2020 08:29:31 p.m.</h3>
+<h3>Oct. 13, 2020 08:45:32 p.m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>14</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -1116,13 +876,13 @@ Caused by: java.util.concurrent.TimeoutException
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='87%'>
+<b>14</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
-<b>19</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='12%'><b>2</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -1139,10 +899,10 @@ Caused by: java.util.concurrent.TimeoutException
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='76%'><b>13</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>38</b> others
+<small data-tooltip='23%'><b>4</b> events failed,
+<b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -1158,7 +918,7 @@ Caused by: java.util.concurrent.TimeoutException
 </div></div>
 <script>
 var timeline = {
-"pageTitle":0.005,"dropdownLabel":0,"selectCountry":0,"nameField":0.001,"genderSelect":0,"toastMsg":0,"login":0.001,"productsPage":0.001,"toastMsg":0.001,"locateItems":0.001,"gotoCart":0,"cartPage":0.001,"validateCartItems":0,"validateCartTotal":0,"validateChkBox":0.001,"validateTC":0,"validatePurchaseBtn":0,"webView":0.002,"nativeAppView":0.001
+"pageTitle":3.451,"dropdownLabel":0.825,"selectCountry":1.819,"nameField":0.802,"genderSelect":0.235,"toastMsg":1.816,"login":2.654,"productsPage":0.326,"toastMsg":1.102,"locateItems":5.995,"gotoCart":2.045,"cartPage":0.145,"validateCartItems":0.166,"validateCartTotal":0.035,"validateChkBox":0.595,"validateTC":0
 };
 </script>
 <div class="row">
@@ -1181,10 +941,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 0,
+passParent: 14,
+failParent: 2,
 warningParent: 0,
-skipParent: 19,
+skipParent: 0,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -1198,10 +958,10 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
-failEvents: 0,
+passEvents: 13,
+failEvents: 4,
 warningEvents: 0,
-skipEvents: 38,
+skipEvents: 0,
 infoEvents: 0
 };
 </script>        </div>

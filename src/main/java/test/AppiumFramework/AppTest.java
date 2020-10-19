@@ -11,8 +11,6 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.validator.Arg;
-import org.apache.http.util.Args;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.TouchAction;
@@ -20,8 +18,6 @@ import static io.appium.java_client.touch.LongPressOptions.longPressOptions;
 import static io.appium.java_client.touch.offset.ElementOption.element;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.remote.AndroidMobileCapabilityType;
-import io.appium.java_client.remote.MobileBrowserType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
@@ -35,13 +31,15 @@ public class AppTest {
 	public static String[] products;
 	public static List<Double> itemprice;
 	public static Double[] prices;
-	public static int cart_count;	
+	public static int cart_count;
 	public static AppiumDriverLocalService service;
 	
 	private static DesiredCapabilities dc;
 	private static FileInputStream fis;
 	private static Properties prop;
-	private static final String PROP_PATH = System.getProperty("user.dir")+"\\src\\main\\java\\test\\AppiumFramework\\global.properties"; 
+	private static final String PROP_PATH = System.getProperty("user.dir")+"\\src\\main\\java\\test\\AppiumFramework\\global.properties";
+	private static AppiumServiceBuilder b;
+	
 	
 	AppTest() 	{
 		try {
@@ -59,18 +57,24 @@ public class AppTest {
 		}
 	}
 	
-	public AppiumDriverLocalService startServer() throws InterruptedException	{
-		AppiumServiceBuilder serviceBuilder = new AppiumServiceBuilder();
-		//serviceBuilder.usingDriverExecutable(new File("C:\\Program Files\\nodejs\\node.exe"));
-		//serviceBuilder.withAppiumJS(new File("C:\\Users\\Basement\\AppData\\Roaming\\npm\\node_modules\\appium\\lib\\main.js"));
-		serviceBuilder.withArgument(ArgTest.CHROME_DRIVER, prop.getProperty("chrome_driver"));
-		service = AppiumDriverLocalService.buildService(serviceBuilder);
+	private static enum Args implements ServerArgument	{
+		CHROME_DRIVER("--chromedriver-executable");		
+		private final String arg;		
+		Args(String arg){this.arg = arg;}
+		@Override
+		public String getArgument(){return arg;}		
+	}
+	
+	public AppiumDriverLocalService startServer() throws InterruptedException, IOException	{
+		b = new AppiumServiceBuilder();
+		b.withArgument(Args.CHROME_DRIVER, prop.getProperty("chrome_driver"));
+		service = AppiumDriverLocalService.buildService(b);
 		if (!checkIfServerIsRunning(4723))	{
 			service.start();
 		}
 		return service;
 	}
-		
+	
 	public static boolean checkIfServerIsRunning(int port)	{
 		boolean isRunning = false;
 		ServerSocket serverSocket; 
@@ -108,33 +112,26 @@ public class AppTest {
 	public static void killADBServer() throws IOException	{
 		Runtime.getRuntime().exec(prop.getProperty("t_adb"));
 	}
+	
+	public static void closeShell() throws IOException	{
+		Runtime.getRuntime().exec(System.getProperty("user.dir")+prop.getProperty("close_cmd"));
+	}
 
 	public static AndroidDriver<AndroidElement> Capabilities() throws IOException, InterruptedException {
 		File appDir = new File("src");
-		File app = new File(appDir, (String) prop.get("GeneralStoreApp"));
+		File app = new File(appDir, (String) prop.getProperty("GeneralStoreApp"));
 		dc = new DesiredCapabilities();
-		String device = System.getProperty("deviceName");
-		//dc.setCapability(MobileCapabilityType.PLATFORM_NAME, prop.get("cap_platName"));
-		//restartADBServer();
-		//if (device.contains("emulator"))	{
-			//
-			//dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, prop.get("emu_pv"));
-			//dc.setCapability(MobileCapabilityType.DEVICE_NAME, prop.get("emu_dn"));
-			//restartADBServer();
-			//startEmulator();
-		//}
-		//else {
-			//dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, prop.get("pkg"));
-			//dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, prop.get("act"));
-			//dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "rdev_pv");
-			//dc.setCapability(MobileCapabilityType.DEVICE_NAME, "rdev_dn");
-		//}
+		//String device = System.getProperty("deviceName");
+		String device = "emulator";
+		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, prop.getProperty("cap_platName"));
+		restartADBServer();
+		if (device.contains("emulator"))	{
+			startEmulator();
+			Thread.sleep(5000);
+		}
 	    dc.setCapability(MobileCapabilityType.DEVICE_NAME, device);
-	    //dc.setCapability(AndroidMobileCapabilityType.CHROMEDRIVER_USE_SYSTEM_EXECUTABLE, false);
-	    //dc.setCapability(MobileCapabilityType.BROWSER_NAME, MobileBrowserType.CHROME);
 	    dc.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
-	    dc.setCapability("chromedriverExecutable", "C:\\Selenium\\ChromeDriver\\v69\\chromedriver.exe");
-		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, prop.get("cap_autoName"));
+		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, prop.getProperty("cap_autoName"));
 		dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 14);
 		URL url = new URL((String) prop.get("server"));
 		AndroidDriver<AndroidElement> d = new AndroidDriver<AndroidElement>(url,dc);

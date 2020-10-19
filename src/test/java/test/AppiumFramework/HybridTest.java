@@ -1,10 +1,7 @@
 package test.AppiumFramework;
 
-import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -51,13 +48,5 @@ public class HybridTest extends AppTest {
 			System.out.println("Could not locate native app view.");
 		}
 		sa.assertAll();
-	}
-	
-	@AfterSuite
-	public void tearDown() throws IOException	{
-		d.quit();
-		//stopEmulator();
-		//killADBServer();
-		//service.stop();
 	}
 }

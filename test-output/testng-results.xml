@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="19" passed="0" failed="0" skipped="19">
+<testng-results ignored="0" total="22" passed="20" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-13T07:22:12 EDT" name="Suite" finished-at="2020-10-13T07:22:13 EDT" duration-ms="492">
+  <suite started-at="2020-10-19T04:26:31 EDT" name="Suite" finished-at="2020-10-19T04:27:58 EDT" duration-ms="86832">
     <groups>
     </groups>
-    <test started-at="2020-10-13T07:22:12 EDT" name="Home Page Test" finished-at="2020-10-13T07:22:12 EDT" duration-ms="46">
+    <test started-at="2020-10-19T04:26:31 EDT" name="Home Page Test" finished-at="2020-10-19T04:26:43 EDT" duration-ms="11787">
       <class name="test.AppiumFramework.HomeTest">
-        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.HomeTest@5afa3c9]" started-at="2020-10-13T07:22:12 EDT" name="initMethod" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1602588132725" status="SKIP">
+        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.HomeTest@7a35b0f5]" started-at="2020-10-19T04:26:31 EDT" name="initMethod" finished-at="2020-10-19T04:26:31 EDT" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initMethod -->
-        <test-method signature="pageTitle(java.lang.String)[pri:1, instance:test.AppiumFramework.HomeTest@5afa3c9]" started-at="2020-10-13T07:22:12 EDT" name="pageTitle" finished-at="2020-10-13T07:22:12 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="pageTitle(java.lang.String)[pri:1, instance:test.AppiumFramework.HomeTest@7a35b0f5]" started-at="2020-10-19T04:26:31 EDT" name="pageTitle" finished-at="2020-10-19T04:26:35 EDT" duration-ms="3819" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,53 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageTitle -->
-        <test-method signature="dropdownLabel()[pri:2, instance:test.AppiumFramework.HomeTest@5afa3c9]" started-at="2020-10-13T07:22:12 EDT" name="dropdownLabel" finished-at="2020-10-13T07:22:12 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="dropdownLabel()[pri:2, instance:test.AppiumFramework.HomeTest@7a35b0f5]" started-at="2020-10-19T04:26:35 EDT" name="dropdownLabel" finished-at="2020-10-19T04:26:35 EDT" duration-ms="234" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at test.AppiumFramework.HomeTest.dropdownLabel(HomeTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dropdownLabel -->
-        <test-method signature="selectCountry(java.lang.String)[pri:3, instance:test.AppiumFramework.HomeTest@5afa3c9]" started-at="2020-10-13T07:22:12 EDT" name="selectCountry" finished-at="2020-10-13T07:22:12 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="selectCountry(java.lang.String)[pri:3, instance:test.AppiumFramework.HomeTest@7a35b0f5]" started-at="2020-10-19T04:26:36 EDT" name="selectCountry" finished-at="2020-10-19T04:26:38 EDT" duration-ms="1854" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +79,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCountry -->
-        <test-method signature="nameField(java.lang.String, java.lang.String)[pri:4, instance:test.AppiumFramework.HomeTest@5afa3c9]" started-at="2020-10-13T07:22:12 EDT" name="nameField" finished-at="2020-10-13T07:22:12 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="nameField(java.lang.String, java.lang.String)[pri:4, instance:test.AppiumFramework.HomeTest@7a35b0f5]" started-at="2020-10-19T04:26:38 EDT" name="nameField" finished-at="2020-10-19T04:26:39 EDT" duration-ms="789" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,11 +95,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nameField -->
-        <test-method signature="genderSelect()[pri:5, instance:test.AppiumFramework.HomeTest@5afa3c9]" started-at="2020-10-13T07:22:12 EDT" name="genderSelect" finished-at="2020-10-13T07:22:12 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="genderSelect()[pri:5, instance:test.AppiumFramework.HomeTest@7a35b0f5]" started-at="2020-10-19T04:26:39 EDT" name="genderSelect" finished-at="2020-10-19T04:26:39 EDT" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- genderSelect -->
-        <test-method signature="toastMsg(java.lang.String)[pri:6, instance:test.AppiumFramework.HomeTest@5afa3c9]" started-at="2020-10-13T07:22:12 EDT" name="toastMsg" finished-at="2020-10-13T07:22:12 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="toastMsg(java.lang.String)[pri:6, instance:test.AppiumFramework.HomeTest@7a35b0f5]" started-at="2020-10-19T04:26:39 EDT" name="toastMsg" finished-at="2020-10-19T04:26:40 EDT" duration-ms="1283" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,7 +110,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toastMsg -->
-        <test-method signature="login(java.lang.String)[pri:7, instance:test.AppiumFramework.HomeTest@5afa3c9]" started-at="2020-10-13T07:22:12 EDT" name="login" finished-at="2020-10-13T07:22:12 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="login(java.lang.String)[pri:7, instance:test.AppiumFramework.HomeTest@7a35b0f5]" started-at="2020-10-19T04:26:40 EDT" name="login" finished-at="2020-10-19T04:26:43 EDT" duration-ms="2636" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,13 +123,13 @@
         </test-method> <!-- login -->
       </class> <!-- test.AppiumFramework.HomeTest -->
     </test> <!-- Home Page Test -->
-    <test started-at="2020-10-13T07:22:13 EDT" name="Products Page Test" finished-at="2020-10-13T07:22:13 EDT" duration-ms="13">
+    <test started-at="2020-10-19T04:26:43 EDT" name="Products Page Test" finished-at="2020-10-19T04:26:53 EDT" duration-ms="9420">
       <class name="test.AppiumFramework.ProductsTest">
-        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.ProductsTest@303cf2ba]" started-at="2020-10-13T07:22:13 EDT" name="initMethod" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1602588133104" status="SKIP">
+        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.ProductsTest@43df23d3]" started-at="2020-10-19T04:26:43 EDT" name="initMethod" finished-at="2020-10-19T04:26:43 EDT" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initMethod -->
-        <test-method signature="productsPage(java.lang.String)[pri:1, instance:test.AppiumFramework.ProductsTest@303cf2ba]" started-at="2020-10-13T07:22:13 EDT" name="productsPage" finished-at="2020-10-13T07:22:13 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="productsPage(java.lang.String)[pri:1, instance:test.AppiumFramework.ProductsTest@43df23d3]" started-at="2020-10-19T04:26:43 EDT" name="productsPage" finished-at="2020-10-19T04:26:44 EDT" duration-ms="306" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,7 +140,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productsPage -->
-        <test-method signature="toastMsg(java.lang.String)[pri:2, instance:test.AppiumFramework.ProductsTest@303cf2ba]" started-at="2020-10-13T07:22:13 EDT" name="toastMsg" finished-at="2020-10-13T07:22:13 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="toastMsg(java.lang.String)[pri:2, instance:test.AppiumFramework.ProductsTest@43df23d3]" started-at="2020-10-19T04:26:44 EDT" name="toastMsg" finished-at="2020-10-19T04:26:44 EDT" duration-ms="662" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -106,10 +148,52 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [cheers!] but found [Please add some product at first]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [cheers!] but found [Please add some product at first]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at test.AppiumFramework.ProductsTest.toastMsg(ProductsTest.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toastMsg -->
-        <test-method signature="locateItems(java.lang.String, java.lang.String)[pri:3, instance:test.AppiumFramework.ProductsTest@303cf2ba]" started-at="2020-10-13T07:22:13 EDT" name="locateItems" finished-at="2020-10-13T07:22:13 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="locateItems(java.lang.String, java.lang.String)[pri:3, instance:test.AppiumFramework.ProductsTest@43df23d3]" started-at="2020-10-19T04:26:45 EDT" name="locateItems" finished-at="2020-10-19T04:26:51 EDT" duration-ms="5943" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,23 +209,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- locateItems -->
-        <test-method signature="gotoCart()[pri:4, instance:test.AppiumFramework.ProductsTest@303cf2ba]" started-at="2020-10-13T07:22:13 EDT" name="gotoCart" finished-at="2020-10-13T07:22:13 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="gotoCart()[pri:4, instance:test.AppiumFramework.ProductsTest@43df23d3]" started-at="2020-10-19T04:26:51 EDT" name="gotoCart" finished-at="2020-10-19T04:26:53 EDT" duration-ms="2045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotoCart -->
-        <test-method is-config="true" signature="convertFromPriceList()[pri:0, instance:test.AppiumFramework.ProductsTest@303cf2ba]" started-at="2020-10-13T07:22:13 EDT" name="convertFromPriceList" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1602588133115" status="SKIP">
+        <test-method is-config="true" signature="convertFromPriceList()[pri:0, instance:test.AppiumFramework.ProductsTest@43df23d3]" started-at="2020-10-19T04:26:53 EDT" name="convertFromPriceList" finished-at="2020-10-19T04:26:53 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- convertFromPriceList -->
       </class> <!-- test.AppiumFramework.ProductsTest -->
     </test> <!-- Products Page Test -->
-    <test started-at="2020-10-13T07:22:13 EDT" name="Cart Page Test" finished-at="2020-10-13T07:22:13 EDT" duration-ms="15">
+    <test started-at="2020-10-19T04:26:53 EDT" name="Cart Page Test" finished-at="2020-10-19T04:27:00 EDT" duration-ms="7259">
       <class name="test.AppiumFramework.CartTest">
-        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.CartTest@514646ef]" started-at="2020-10-13T07:22:13 EDT" name="initMethod" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1602588133147" status="SKIP">
+        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.CartTest@1040be71]" started-at="2020-10-19T04:26:53 EDT" name="initMethod" finished-at="2020-10-19T04:26:53 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initMethod -->
-        <test-method signature="cartPage(java.lang.String)[pri:1, instance:test.AppiumFramework.CartTest@514646ef]" started-at="2020-10-13T07:22:13 EDT" name="cartPage" finished-at="2020-10-13T07:22:13 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="cartPage(java.lang.String)[pri:1, instance:test.AppiumFramework.CartTest@1040be71]" started-at="2020-10-19T04:26:53 EDT" name="cartPage" finished-at="2020-10-19T04:26:53 EDT" duration-ms="130" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -152,7 +236,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartPage -->
-        <test-method signature="validateCartItems(java.lang.String)[pri:2, instance:test.AppiumFramework.CartTest@514646ef]" started-at="2020-10-13T07:22:13 EDT" name="validateCartItems" finished-at="2020-10-13T07:22:13 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="validateCartItems(java.lang.String)[pri:2, instance:test.AppiumFramework.CartTest@1040be71]" started-at="2020-10-19T04:26:53 EDT" name="validateCartItems" finished-at="2020-10-19T04:26:53 EDT" duration-ms="132" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -163,11 +247,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCartItems -->
-        <test-method signature="validateCartTotal()[pri:3, instance:test.AppiumFramework.CartTest@514646ef]" started-at="2020-10-13T07:22:13 EDT" name="validateCartTotal" finished-at="2020-10-13T07:22:13 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="validateCartTotal()[pri:3, instance:test.AppiumFramework.CartTest@1040be71]" started-at="2020-10-19T04:26:53 EDT" name="validateCartTotal" finished-at="2020-10-19T04:26:53 EDT" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCartTotal -->
-        <test-method signature="validateChkBox(java.lang.String)[pri:4, instance:test.AppiumFramework.CartTest@514646ef]" started-at="2020-10-13T07:22:13 EDT" name="validateChkBox" finished-at="2020-10-13T07:22:13 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="validateChkBox(java.lang.String)[pri:4, instance:test.AppiumFramework.CartTest@1040be71]" started-at="2020-10-19T04:26:53 EDT" name="validateChkBox" finished-at="2020-10-19T04:26:54 EDT" duration-ms="585" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -178,7 +262,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateChkBox -->
-        <test-method signature="validateTC(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:test.AppiumFramework.CartTest@514646ef]" started-at="2020-10-13T07:22:13 EDT" name="validateTC" finished-at="2020-10-13T07:22:13 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="validateTC(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:test.AppiumFramework.CartTest@1040be71]" started-at="2020-10-19T04:26:54 EDT" name="validateTC" finished-at="2020-10-19T04:26:57 EDT" duration-ms="3764" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -214,7 +298,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTC -->
-        <test-method signature="validatePurchaseBtn(java.lang.String)[pri:6, instance:test.AppiumFramework.CartTest@514646ef]" started-at="2020-10-13T07:22:13 EDT" name="validatePurchaseBtn" finished-at="2020-10-13T07:22:13 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="validatePurchaseBtn(java.lang.String)[pri:6, instance:test.AppiumFramework.CartTest@1040be71]" started-at="2020-10-19T04:26:57 EDT" name="validatePurchaseBtn" finished-at="2020-10-19T04:27:00 EDT" duration-ms="2603" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -227,312 +311,98 @@
         </test-method> <!-- validatePurchaseBtn -->
       </class> <!-- test.AppiumFramework.CartTest -->
     </test> <!-- Cart Page Test -->
-    <test started-at="2020-10-13T07:22:13 EDT" name="Hybrid App Test" finished-at="2020-10-13T07:22:13 EDT" duration-ms="12">
+    <test started-at="2020-10-19T04:27:00 EDT" name="Hybrid App Test" finished-at="2020-10-19T04:27:12 EDT" duration-ms="12419">
       <class name="test.AppiumFramework.HybridTest">
-        <test-method signature="webView()[pri:1, instance:test.AppiumFramework.HybridTest@3f4faf53]" started-at="2020-10-13T07:22:13 EDT" name="webView" finished-at="2020-10-13T07:22:13 EDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-    at getResponseForW3CError (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-    at getResponseForW3CError (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:88)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:94)
-at test.AppiumFramework.AppTest.Capabilities(AppTest.java:125)
-at test.AppiumFramework.HomeTest.setUp(HomeTest.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-... 34 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-    at getResponseForW3CError (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-... 39 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="webView()[pri:1, instance:test.AppiumFramework.HybridTest@28dcca0c]" started-at="2020-10-19T04:27:00 EDT" name="webView" finished-at="2020-10-19T04:27:09 EDT" duration-ms="9051" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webView -->
-        <test-method signature="nativeAppView()[pri:2, instance:test.AppiumFramework.HybridTest@3f4faf53]" started-at="2020-10-13T07:22:13 EDT" name="nativeAppView" finished-at="2020-10-13T07:22:13 EDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-    at getResponseForW3CError (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-    at getResponseForW3CError (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:88)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:94)
-at test.AppiumFramework.AppTest.Capabilities(AppTest.java:125)
-at test.AppiumFramework.HomeTest.setUp(HomeTest.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-... 34 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-    at getResponseForW3CError (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-... 39 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="nativeAppView()[pri:2, instance:test.AppiumFramework.HybridTest@28dcca0c]" started-at="2020-10-19T04:27:09 EDT" name="nativeAppView" finished-at="2020-10-19T04:27:12 EDT" duration-ms="3365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nativeAppView -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AppiumFramework.HybridTest@3f4faf53]" started-at="2020-10-13T07:22:13 EDT" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1602588133238" status="SKIP">
+      </class> <!-- test.AppiumFramework.HybridTest -->
+    </test> <!-- Hybrid App Test -->
+    <test started-at="2020-10-19T04:27:13 EDT" name="Home Page Data-Driven Test" finished-at="2020-10-19T04:27:58 EDT" duration-ms="45490">
+      <class name="test.AppiumFramework.CustLoginTest">
+        <test-method is-config="true" signature="initMethod()[pri:0, instance:test.AppiumFramework.CustLoginTest@5965d37]" started-at="2020-10-19T04:27:13 EDT" name="initMethod" finished-at="2020-10-19T04:27:13 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method signature="mySQL_Test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.AppiumFramework.CustLoginTest@5965d37]" started-at="2020-10-19T04:27:13 EDT" name="mySQL_Test" data-provider="MySQL-provider" finished-at="2020-10-19T04:27:28 EDT" duration-ms="14637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Antarctica]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Fibreglass Bill]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mySQL_Test -->
+        <test-method signature="mySQL_Test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.AppiumFramework.CustLoginTest@5965d37]" started-at="2020-10-19T04:27:28 EDT" name="mySQL_Test" data-provider="MySQL-provider" finished-at="2020-10-19T04:27:48 EDT" duration-ms="20707" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Barbados]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jungle Yung]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mySQL_Test -->
+        <test-method signature="mySQL_Test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.AppiumFramework.CustLoginTest@5965d37]" started-at="2020-10-19T04:27:48 EDT" name="mySQL_Test" data-provider="MySQL-provider" finished-at="2020-10-19T04:27:58 EDT" duration-ms="9804" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Algeria]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mySQL_Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AppiumFramework.CustLoginTest@5965d37]" started-at="2020-10-19T04:27:58 EDT" name="tearDown" finished-at="2020-10-19T04:27:58 EDT" duration-ms="411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.AppiumFramework.HybridTest -->
+      </class> <!-- test.AppiumFramework.CustLoginTest -->
       <class name="test.AppiumFramework.HomeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AppiumFramework.HomeTest@5afa3c9]" started-at="2020-10-13T07:21:48 EDT" name="setUp" finished-at="2020-10-13T07:22:12 EDT" duration-ms="23905" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-    at getResponseForW3CError (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-    at getResponseForW3CError (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:88)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:94)
-at test.AppiumFramework.AppTest.Capabilities(AppTest.java:125)
-at test.AppiumFramework.HomeTest.setUp(HomeTest.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-... 34 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-    at getResponseForW3CError (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-... 39 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AppiumFramework.HomeTest@7a35b0f5]" started-at="2020-10-19T04:26:09 EDT" name="setUp" finished-at="2020-10-19T04:26:31 EDT" duration-ms="22462" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- test.AppiumFramework.HomeTest -->
-    </test> <!-- Hybrid App Test -->
+    </test> <!-- Home Page Data-Driven Test -->
   </suite> <!-- Suite -->
 </testng-results>

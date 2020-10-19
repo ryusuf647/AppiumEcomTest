@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">5 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,111 +93,135 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">19 methods,  19 skipped,  </span>
+                    <span class="method-stats">22 methods, 2 failed,   20 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.CartTest" class="method navigator-link" hash-for-method="cartPage(Cart)">cartPage(Cart)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.HomeTest" class="method navigator-link" hash-for-method="dropdownLabel">dropdownLabel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.ProductsTest" class="method navigator-link" hash-for-method="toastMsg(Please add some product at first)">toastMsg(Please add some product at first)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.CartTest" class="method navigator-link" hash-for-method="cartPage(Cart)">cartPage(Cart)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.HomeTest" class="method navigator-link" hash-for-method="genderSelect">genderSelect</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.ProductsTest" class="method navigator-link" hash-for-method="gotoCart">gotoCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.ProductsTest" class="method navigator-link" hash-for-method="locateItems(android.widget.TextView, ADDED TO CART)">locateItems(android.widget.TextView, ADDED TO CART)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.HomeTest" class="method navigator-link" hash-for-method="login(Let&#039;s  Shop)">login(Let's  Shop)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.CustLoginTest" class="method navigator-link" hash-for-method="mySQL_Test(Barbados, Jungle Yung, Female)">mySQL_Test(Barbados, Jungle Yung, Female)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.CustLoginTest" class="method navigator-link" hash-for-method="mySQL_Test(Antarctica, Fibreglass Bill, Male)">mySQL_Test(Antarctica, Fibreglass Bill, Male)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.CustLoginTest" class="method navigator-link" hash-for-method="mySQL_Test(Algeria, , Male)">mySQL_Test(Algeria, , Male)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.HomeTest" class="method navigator-link" hash-for-method="nameField(Enter name here, Joe)">nameField(Enter name here, Joe)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.HybridTest" class="method navigator-link" hash-for-method="nativeAppView">nativeAppView</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.HomeTest" class="method navigator-link" hash-for-method="pageTitle(General Store)">pageTitle(General Store)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.ProductsTest" class="method navigator-link" hash-for-method="productsPage(Products)">productsPage(Products)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.HomeTest" class="method navigator-link" hash-for-method="selectCountry(Algeria)">selectCountry(Algeria)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.HomeTest" class="method navigator-link" hash-for-method="toastMsg(Please enter your name)">toastMsg(Please enter your name)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.ProductsTest" class="method navigator-link" hash-for-method="toastMsg(Please add some product at first)">toastMsg(Please add some product at first)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.CartTest" class="method navigator-link" hash-for-method="validateCartItems(Not Found)">validateCartItems(Not Found)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.CartTest" class="method navigator-link" hash-for-method="validateCartTotal">validateCartTotal</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.CartTest" class="method navigator-link" hash-for-method="validateChkBox(Send me e-mails on discounts related to selected products in future)">validateChkBox(Send me e-mails on discounts related to selected products in future)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.CartTest" class="method navigator-link" hash-for-method="validatePurchaseBtn(Visit to the website to complete purchase)">validatePurchaseBtn(Visit to the website to complete purchase)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.CartTest" class="method navigator-link" hash-for-method="validateTC(Please read our terms of conditions, Terms Of Conditions, Lorem Ipsum is simply dummy text of the pr...)">validateTC(Please read our terms of conditions, Terms Of Conditions, Lorem Ipsum is simply dummy text of the pr...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.AppiumFramework.HybridTest" class="method navigator-link" hash-for-method="webView">webView</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -209,48 +233,31 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">test.AppiumFramework.ProductsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="gotoCart">
-                  </a> <!-- gotoCart -->
-                  <span class="method-name">gotoCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="locateItems(android.widget.TextView, ADDED TO CART)">
-                  </a> <!-- locateItems(android.widget.TextView, ADDED TO CART) -->
-                  <span class="method-name">locateItems</span>
-                  <span class="parameters">(android.widget.TextView, ADDED TO CART)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="productsPage(Products)">
-                  </a> <!-- productsPage(Products) -->
-                  <span class="method-name">productsPage</span>
-                  <span class="parameters">(Products)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="toastMsg(Please add some product at first)">
                   </a> <!-- toastMsg(Please add some product at first) -->
                   <span class="method-name">toastMsg</span>
                   <span class="parameters">(Please add some product at first)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [cheers!] but found [Please add some product at first]
+	at test.AppiumFramework.ProductsTest.toastMsg(ProductsTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">test.AppiumFramework.HomeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -259,60 +266,19 @@
                   <a name="dropdownLabel">
                   </a> <!-- dropdownLabel -->
                   <span class="method-name">dropdownLabel</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="genderSelect">
-                  </a> <!-- genderSelect -->
-                  <span class="method-name">genderSelect</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="login(Let&#039;s  Shop)">
-                  </a> <!-- login(Let's  Shop) -->
-                  <span class="method-name">login</span>
-                  <span class="parameters">(Let's  Shop)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="nameField(Enter name here, Joe)">
-                  </a> <!-- nameField(Enter name here, Joe) -->
-                  <span class="method-name">nameField</span>
-                  <span class="parameters">(Enter name here, Joe)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="pageTitle(General Store)">
-                  </a> <!-- pageTitle(General Store) -->
-                  <span class="method-name">pageTitle</span>
-                  <span class="parameters">(General Store)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectCountry(Algeria)">
-                  </a> <!-- selectCountry(Algeria) -->
-                  <span class="method-name">selectCountry</span>
-                  <span class="parameters">(Algeria)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="toastMsg(Please enter your name)">
-                  </a> <!-- toastMsg(Please enter your name) -->
-                  <span class="method-name">toastMsg</span>
-                  <span class="parameters">(Please enter your name)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [false] but found [true]
+	at test.AppiumFramework.HomeTest.dropdownLabel(HomeTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">test.AppiumFramework.HybridTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -321,57 +287,6 @@
                   <a name="nativeAppView">
                   </a> <!-- nativeAppView -->
                   <span class="method-name">nativeAppView</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-UUGSSKP&apos;, ip: &apos;192.168.188.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-    at getResponseForW3CError (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-UUGSSKP&apos;, ip: &apos;192.168.188.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
-	at test.AppiumFramework.AppTest.Capabilities(AppTest.java:125)
-	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:22)
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-	... 34 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-UUGSSKP&apos;, ip: &apos;192.168.188.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-    at getResponseForW3CError (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	... 39 more
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -379,64 +294,13 @@ remote stacktrace: UnknownError: An unknown server-side error occurred while pro
                   <a name="webView">
                   </a> <!-- webView -->
                   <span class="method-name">webView</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-UUGSSKP&apos;, ip: &apos;192.168.188.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-    at getResponseForW3CError (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-UUGSSKP&apos;, ip: &apos;192.168.188.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
-	at test.AppiumFramework.AppTest.Capabilities(AppTest.java:125)
-	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:22)
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-	... 34 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-UUGSSKP&apos;, ip: &apos;192.168.188.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20667ms.
-    at getResponseForW3CError (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
-    at asyncHandler (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	... 39 more
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">test.AppiumFramework.CartTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -488,7 +352,125 @@ remote stacktrace: UnknownError: An unknown server-side error occurred while pro
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.AppiumFramework.ProductsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="gotoCart">
+                  </a> <!-- gotoCart -->
+                  <span class="method-name">gotoCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="locateItems(android.widget.TextView, ADDED TO CART)">
+                  </a> <!-- locateItems(android.widget.TextView, ADDED TO CART) -->
+                  <span class="method-name">locateItems</span>
+                  <span class="parameters">(android.widget.TextView, ADDED TO CART)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productsPage(Products)">
+                  </a> <!-- productsPage(Products) -->
+                  <span class="method-name">productsPage</span>
+                  <span class="parameters">(Products)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.AppiumFramework.HomeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="genderSelect">
+                  </a> <!-- genderSelect -->
+                  <span class="method-name">genderSelect</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(Let&#039;s  Shop)">
+                  </a> <!-- login(Let's  Shop) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(Let's  Shop)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="nameField(Enter name here, Joe)">
+                  </a> <!-- nameField(Enter name here, Joe) -->
+                  <span class="method-name">nameField</span>
+                  <span class="parameters">(Enter name here, Joe)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="pageTitle(General Store)">
+                  </a> <!-- pageTitle(General Store) -->
+                  <span class="method-name">pageTitle</span>
+                  <span class="parameters">(General Store)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectCountry(Algeria)">
+                  </a> <!-- selectCountry(Algeria) -->
+                  <span class="method-name">selectCountry</span>
+                  <span class="parameters">(Algeria)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="toastMsg(Please enter your name)">
+                  </a> <!-- toastMsg(Please enter your name) -->
+                  <span class="method-name">toastMsg</span>
+                  <span class="parameters">(Please enter your name)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.AppiumFramework.CustLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="mySQL_Test(Barbados, Jungle Yung, Female)">
+                  </a> <!-- mySQL_Test(Barbados, Jungle Yung, Female) -->
+                  <span class="method-name">mySQL_Test</span>
+                  <span class="parameters">(Barbados, Jungle Yung, Female)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mySQL_Test(Antarctica, Fibreglass Bill, Male)">
+                  </a> <!-- mySQL_Test(Antarctica, Fibreglass Bill, Male) -->
+                  <span class="method-name">mySQL_Test</span>
+                  <span class="parameters">(Antarctica, Fibreglass Bill, Male)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mySQL_Test(Algeria, , Male)">
+                  </a> <!-- mySQL_Test(Algeria, , Male) -->
+                  <span class="method-name">mySQL_Test</span>
+                  <span class="parameters">(Algeria, , Male)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -542,6 +524,11 @@ remote stacktrace: UnknownError: An unknown server-side error occurred while pro
       &lt;class name=&quot;test.AppiumFramework.HybridTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Hybrid App Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Home Page Data-Driven Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.AppiumFramework.CustLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Home Page Data-Driven Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -563,6 +550,9 @@ remote stacktrace: UnknownError: An unknown server-side error occurred while pro
               </li>
               <li>
                 <span class="test-name">Hybrid App Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Home Page Data-Driven Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -588,88 +578,100 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(19);
+data.addRows(22);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'dropdownLabel')
-data.setCell(0, 2, 'test.AppiumFramework.HomeTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'mySQL_Test')
+data.setCell(0, 2, 'test.AppiumFramework.CustLoginTest')
+data.setCell(0, 3, 20707);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'toastMsg')
-data.setCell(1, 2, 'test.AppiumFramework.HomeTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'mySQL_Test')
+data.setCell(1, 2, 'test.AppiumFramework.CustLoginTest')
+data.setCell(1, 3, 14637);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'selectCountry')
-data.setCell(2, 2, 'test.AppiumFramework.HomeTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'mySQL_Test')
+data.setCell(2, 2, 'test.AppiumFramework.CustLoginTest')
+data.setCell(2, 3, 9804);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'nameField')
-data.setCell(3, 2, 'test.AppiumFramework.HomeTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'webView')
+data.setCell(3, 2, 'test.AppiumFramework.HybridTest')
+data.setCell(3, 3, 9051);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'pageTitle')
-data.setCell(4, 2, 'test.AppiumFramework.HomeTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 1, 'locateItems')
+data.setCell(4, 2, 'test.AppiumFramework.ProductsTest')
+data.setCell(4, 3, 5943);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'login')
+data.setCell(5, 1, 'pageTitle')
 data.setCell(5, 2, 'test.AppiumFramework.HomeTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 3, 3819);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'genderSelect')
-data.setCell(6, 2, 'test.AppiumFramework.HomeTest')
-data.setCell(6, 3, 0);
+data.setCell(6, 1, 'validateTC')
+data.setCell(6, 2, 'test.AppiumFramework.CartTest')
+data.setCell(6, 3, 3764);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'locateItems')
-data.setCell(7, 2, 'test.AppiumFramework.ProductsTest')
-data.setCell(7, 3, 0);
+data.setCell(7, 1, 'nativeAppView')
+data.setCell(7, 2, 'test.AppiumFramework.HybridTest')
+data.setCell(7, 3, 3365);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'toastMsg')
-data.setCell(8, 2, 'test.AppiumFramework.ProductsTest')
-data.setCell(8, 3, 0);
+data.setCell(8, 1, 'login')
+data.setCell(8, 2, 'test.AppiumFramework.HomeTest')
+data.setCell(8, 3, 2636);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'gotoCart')
-data.setCell(9, 2, 'test.AppiumFramework.ProductsTest')
-data.setCell(9, 3, 0);
+data.setCell(9, 1, 'validatePurchaseBtn')
+data.setCell(9, 2, 'test.AppiumFramework.CartTest')
+data.setCell(9, 3, 2603);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'productsPage')
+data.setCell(10, 1, 'gotoCart')
 data.setCell(10, 2, 'test.AppiumFramework.ProductsTest')
-data.setCell(10, 3, 0);
+data.setCell(10, 3, 2045);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'cartPage')
-data.setCell(11, 2, 'test.AppiumFramework.CartTest')
-data.setCell(11, 3, 0);
+data.setCell(11, 1, 'selectCountry')
+data.setCell(11, 2, 'test.AppiumFramework.HomeTest')
+data.setCell(11, 3, 1854);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'validateChkBox')
-data.setCell(12, 2, 'test.AppiumFramework.CartTest')
-data.setCell(12, 3, 0);
+data.setCell(12, 1, 'toastMsg')
+data.setCell(12, 2, 'test.AppiumFramework.HomeTest')
+data.setCell(12, 3, 1283);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'validateTC')
-data.setCell(13, 2, 'test.AppiumFramework.CartTest')
-data.setCell(13, 3, 0);
+data.setCell(13, 1, 'nameField')
+data.setCell(13, 2, 'test.AppiumFramework.HomeTest')
+data.setCell(13, 3, 789);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'validatePurchaseBtn')
-data.setCell(14, 2, 'test.AppiumFramework.CartTest')
-data.setCell(14, 3, 0);
+data.setCell(14, 1, 'toastMsg')
+data.setCell(14, 2, 'test.AppiumFramework.ProductsTest')
+data.setCell(14, 3, 662);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'validateCartItems')
+data.setCell(15, 1, 'validateChkBox')
 data.setCell(15, 2, 'test.AppiumFramework.CartTest')
-data.setCell(15, 3, 0);
+data.setCell(15, 3, 585);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'validateCartTotal')
-data.setCell(16, 2, 'test.AppiumFramework.CartTest')
-data.setCell(16, 3, 0);
+data.setCell(16, 1, 'productsPage')
+data.setCell(16, 2, 'test.AppiumFramework.ProductsTest')
+data.setCell(16, 3, 306);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'webView')
-data.setCell(17, 2, 'test.AppiumFramework.HybridTest')
-data.setCell(17, 3, 0);
+data.setCell(17, 1, 'genderSelect')
+data.setCell(17, 2, 'test.AppiumFramework.HomeTest')
+data.setCell(17, 3, 244);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'nativeAppView')
-data.setCell(18, 2, 'test.AppiumFramework.HybridTest')
-data.setCell(18, 3, 0);
+data.setCell(18, 1, 'dropdownLabel')
+data.setCell(18, 2, 'test.AppiumFramework.HomeTest')
+data.setCell(18, 3, 234);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'validateCartItems')
+data.setCell(19, 2, 'test.AppiumFramework.CartTest')
+data.setCell(19, 3, 132);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'cartPage')
+data.setCell(20, 2, 'test.AppiumFramework.CartTest')
+data.setCell(20, 3, 130);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'validateCartTotal')
+data.setCell(21, 2, 'test.AppiumFramework.CartTest')
+data.setCell(21, 3, 36);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -697,115 +699,136 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">test.AppiumFramework.HomeTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">initMethod</span>
-                <span class="method-start">23926 ms</span>
+                <span class="method-start">22473 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">pageTitle(General Store)</span>
-                <span class="method-start">23937 ms</span>
+                <span class="method-start">22632 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">dropdownLabel</span>
-                <span class="method-start">23949 ms</span>
+                <span class="method-start">26459 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">selectCountry(Algeria)</span>
-                <span class="method-start">23952 ms</span>
+                <span class="method-start">27438 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">nameField(Enter name here, Joe)</span>
-                <span class="method-start">23953 ms</span>
+                <span class="method-start">29294 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">genderSelect</span>
-                <span class="method-start">23955 ms</span>
+                <span class="method-start">30084 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">toastMsg(Please enter your name)</span>
-                <span class="method-start">23957 ms</span>
+                <span class="method-start">30329 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login(Let's  Shop)</span>
-                <span class="method-start">23959 ms</span>
+                <span class="method-start">31613 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.AppiumFramework.ProductsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initMethod</span>
-                <span class="method-start">24305 ms</span>
+                <span class="method-start">34603 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">productsPage(Products)</span>
-                <span class="method-start">24307 ms</span>
+                <span class="method-start">34622 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">toastMsg(Please add some product at first)</span>
-                <span class="method-start">24309 ms</span>
+                <span class="method-start">34929 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">locateItems(android.widget.TextView, ADDED TO CART)</span>
-                <span class="method-start">24311 ms</span>
+                <span class="method-start">36032 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">gotoCart</span>
-                <span class="method-start">24313 ms</span>
+                <span class="method-start">41976 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">convertFromPriceList</span>
-                <span class="method-start">24316 ms</span>
+                <span class="method-start">44022 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.AppiumFramework.CartTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initMethod</span>
-                <span class="method-start">24348 ms</span>
+                <span class="method-start">44061 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">cartPage(Cart)</span>
-                <span class="method-start">24350 ms</span>
+                <span class="method-start">44062 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateCartItems(Not Found)</span>
-                <span class="method-start">24352 ms</span>
+                <span class="method-start">44193 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateCartTotal</span>
-                <span class="method-start">24354 ms</span>
+                <span class="method-start">44327 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateChkBox(Send me e-mails on discounts related to selected products in future)</span>
-                <span class="method-start">24356 ms</span>
+                <span class="method-start">44364 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateTC(Please read our terms of conditions, Terms Of Conditions, Lorem Ipsum is simply dummy text of the pr...)</span>
-                <span class="method-start">24358 ms</span>
+                <span class="method-start">44950 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validatePurchaseBtn(Visit to the website to complete purchase)</span>
-                <span class="method-start">24361 ms</span>
+                <span class="method-start">48716 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.AppiumFramework.HybridTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">webView</span>
-                <span class="method-start">24396 ms</span>
+                <span class="method-start">51353 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">nativeAppView</span>
-                <span class="method-start">24402 ms</span>
+                <span class="method-start">60405 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.AppiumFramework.CustLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initMethod</span>
+                <span class="method-start">63806 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">mySQL_Test(Antarctica, Fibreglass Bill, Male)</span>
+                <span class="method-start">64144 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">mySQL_Test(Barbados, Jungle Yung, Female)</span>
+                <span class="method-start">78782 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">mySQL_Test(Algeria, , Male)</span>
+                <span class="method-start">99490 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24439 ms</span>
+                <span class="method-start">109330 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

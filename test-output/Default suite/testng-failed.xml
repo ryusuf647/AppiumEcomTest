@@ -3,19 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.AppiumFramework.HomeTest">
+      <class name="test.AppiumFramework.CustLoginTest">
         <methods>
-          <include name="dropdownLabel"/>
-          <include name="nameField"/>
-          <include name="setUp"/>
-          <include name="toastMsg"/>
-          <include name="login"/>
-          <include name="initMethod"/>
-          <include name="genderSelect"/>
-          <include name="selectCountry"/>
-          <include name="pageTitle"/>
+          <include name="mySQL_Test"/>
         </methods>
-      </class> <!-- test.AppiumFramework.HomeTest -->
+      </class> <!-- test.AppiumFramework.CustLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

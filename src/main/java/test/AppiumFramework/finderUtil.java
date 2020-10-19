@@ -13,8 +13,12 @@ import io.appium.java_client.android.AndroidElement;
 
 public class finderUtil extends AppTest {
 	
-	public static WebElement locateCountry(AndroidDriver<AndroidElement> d, String c)	{		
-		return d.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"" + c + "\"));");
+	public static WebElement locateCountry(AndroidDriver<AndroidElement> d, String c)	{
+		//Set max swipes to 100 and scroll to desired element
+		d.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).setMaxSearchSwipes(100)" +
+				".scrollIntoView(new UiSelector().textMatches(\"" + c + "\"))");
+		//once element is visible, locate it by xpath and return it
+		return d.findElementByXPath("//*[@text=\"" + c + "\"]");
 	}
 	
 	public static boolean locateProduct(AndroidDriver<AndroidElement> d, String item) throws InterruptedException	{

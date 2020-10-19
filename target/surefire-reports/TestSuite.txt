@@ -1,16 +1,29 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 19, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 58.831 s <<< FAILURE! - in TestSuite
-test.AppiumFramework.HomeTest.dropdownLabel  Time elapsed: 0.771 s  <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	expected [false] but found [true]
-	at test.AppiumFramework.HomeTest.dropdownLabel(HomeTest.java:41)
-
-test.AppiumFramework.ProductsTest.toastMsg[Please add some product at first](1)  Time elapsed: 1.239 s  <<< FAILURE!
-java.lang.AssertionError: 
-The following asserts failed:
-	expected [cheers!] but found [Please add some product at first]
-	at test.AppiumFramework.ProductsTest.toastMsg(ProductsTest.java:56)
+Tests run: 29, Failures: 1, Errors: 0, Skipped: 28, Time elapsed: 33.765 s <<< FAILURE! - in TestSuite
+test.AppiumFramework.HomeTest.setUp  Time elapsed: 32.81 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20134ms.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20134ms.
+    at getResponseForW3CError (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:381:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: AndroidDriver
+	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
+Caused by: java.lang.reflect.InvocationTargetException
+	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
+Caused by: org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20134ms.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UUGSSKP', ip: '192.168.188.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20134ms.
+    at getResponseForW3CError (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Basement\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:381:37)
+	at test.AppiumFramework.HomeTest.setUp(HomeTest.java:20)
 

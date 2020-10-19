@@ -16,8 +16,8 @@ public class HomeTest extends AppTest {
 	
 	@BeforeSuite
 	public void setUp() throws IOException, InterruptedException	{
-		//tAppiumInstances();
-		//service=startServer();
+		tAppiumInstances();
+		service=startServer();
 		d = Capabilities();
 	}
 	

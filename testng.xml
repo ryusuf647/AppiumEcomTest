@@ -48,4 +48,10 @@
   		<class name="test.AppiumFramework.HybridTest"/>
   	</classes>
   </test>
+  
+  <test name="Home Page Data-Driven Test">
+  	<classes>
+  		<class name="test.AppiumFramework.CustLoginTest"/>
+  	</classes>
+  </test>
 </suite>

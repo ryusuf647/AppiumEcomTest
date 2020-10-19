@@ -15,8 +15,14 @@
       <class name="test.AppiumFramework.HomeTest">
         <methods>
           <include name="dropdownLabel"/>
+          <include name="nameField"/>
           <include name="setUp"/>
+          <include name="toastMsg"/>
+          <include name="login"/>
           <include name="initMethod"/>
+          <include name="genderSelect"/>
+          <include name="selectCountry"/>
+          <include name="pageTitle"/>
         </methods>
       </class> <!-- test.AppiumFramework.HomeTest -->
     </classes>
@@ -29,11 +35,60 @@
     <classes>
       <class name="test.AppiumFramework.ProductsTest">
         <methods>
+          <include name="gotoCart"/>
+          <include name="locateItems"/>
           <include name="convertFromPriceList"/>
+          <include name="productsPage"/>
           <include name="initMethod"/>
-          <include name="toastMsg" invocation-numbers="0"/>
+          <include name="toastMsg"/>
         </methods>
       </class> <!-- test.AppiumFramework.ProductsTest -->
     </classes>
   </test> <!-- Products Page Test(failed) -->
+  <test thread-count="5" name="Cart Page Test(failed)" verbose="0">
+    <parameter name="tctxt" value="Please read our terms of conditions"/>
+    <parameter name="purchasetxt" value="Visit to the website to complete purchase"/>
+    <parameter name="cartpagetitle" value="Cart"/>
+    <parameter name="price" value="Not Found"/>
+    <parameter name="chkbtxt" value="Send me e-mails on discounts related to selected products in future"/>
+    <parameter name="tcbody3" value=" when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+    <parameter name="tcbody2" value=" Lorem Ipsum has been the industry&#039;s standard dummy text ever since the 1500s,"/>
+    <parameter name="tcbody1" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/>
+    <parameter name="tcClose" value="CLOSE"/>
+    <parameter name="tctitle" value="Terms Of Conditions"/>
+    <classes>
+      <class name="test.AppiumFramework.CartTest">
+        <methods>
+          <include name="cartPage"/>
+          <include name="initMethod"/>
+          <include name="validatePurchaseBtn"/>
+          <include name="validateCartItems"/>
+          <include name="validateCartTotal"/>
+          <include name="validateTC"/>
+          <include name="validateChkBox"/>
+        </methods>
+      </class> <!-- test.AppiumFramework.CartTest -->
+    </classes>
+  </test> <!-- Cart Page Test(failed) -->
+  <test thread-count="5" name="Hybrid App Test(failed)" verbose="0">
+    <classes>
+      <class name="test.AppiumFramework.HybridTest">
+        <methods>
+          <include name="webView"/>
+          <include name="nativeAppView"/>
+        </methods>
+      </class> <!-- test.AppiumFramework.HybridTest -->
+    </classes>
+  </test> <!-- Hybrid App Test(failed) -->
+  <test thread-count="5" name="Home Page Data-Driven Test(failed)" verbose="0">
+    <classes>
+      <class name="test.AppiumFramework.CustLoginTest">
+        <methods>
+          <include name="mySQL_Test"/>
+          <include name="initMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.AppiumFramework.CustLoginTest -->
+    </classes>
+  </test> <!-- Home Page Data-Driven Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

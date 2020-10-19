@@ -94,7 +94,6 @@ public class AppTest {
 	
 	public static void startEmulator() throws IOException, InterruptedException	{
 		Runtime.getRuntime().exec(System.getProperty("user.dir")+prop.getProperty("start_emu"));
-		Thread.sleep(6000); //***Required to give emulator time to load in memory, otherwise won't be detected***
 	}
 	
 	public static void stopEmulator() throws IOException	{
@@ -127,7 +126,7 @@ public class AppTest {
 		restartADBServer();
 		if (device.contains("emulator"))	{
 			startEmulator();
-			Thread.sleep(5000);
+			Thread.sleep(10000); //***Required to give emulator time to load in memory, otherwise won't be detected***
 		}
 	    dc.setCapability(MobileCapabilityType.DEVICE_NAME, device);
 	    dc.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
